@@ -7,14 +7,76 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
 
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
+    <h1 class="govuk-heading-l">
+      {{ serviceName }} prototypes
     </h1>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    <p>This will document all versions of prototypes for testing the use of paper in the export journey</p>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <!-------- EXPORT PAPER PROTOTYPES -------->
+
+            <!-- V1 -->
+            <dl class="govuk-list">
+              <dt><b>Version 1</b> (August 2024)</dt>
+              <dd>
+      
+                <ul class="govuk-list">
+                  <li>
+                    <a href="#">V1 - Include Defra account signup</a>
+                  </li>
+                  <br>
+                  <li>
+                    <b>Includes:</b><br>
+                    - Mockup of ECHO cases screen as start point<br>
+                    - first layout of digital attestations based on EHC 8631<br>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <!-- {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %} -->
   </div>
+
+  <!--- END PROTOTYPES --->
+
+  <!--- RELATED LINKS (ASIDE)--->
+
+  <div class="govuk-grid-column-one-third">
+
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Related links
+        <span class="govuk-caption-m ">(all links open in a new tab)</span>
+      </h2>
+
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="https://www.figma.com/design/0Za7YbEX0RSCTARdCUAZQj/Trade-Exports-Alpha---Attestations?node-id=386-155&t=claicMOO47b4p8Ex-1" target="_blank">
+              Figma screen flows for prototype
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/defra-design/trade-exports-paper" target="_blank">
+              Prototype code on Github
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </aside>
+
+  </div>
+
+  <!--- END RELATED LINKS --->
+
 </div>
 
 {% endblock %}
