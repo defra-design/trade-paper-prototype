@@ -1,0 +1,58 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    
+        <!------------------ PANEL -------------------------->
+
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+              Certified
+            </h1>
+          </div>
+
+        <!------------------ END PANEL -------------------------->
+
+
+        <!------------------ CONTENT -------------------------->
+
+        <p>You have certified the export health certificate for [insert name of exporter and / or goods]</p>
+
+        <h2 class="govuk-heading-s">What would you like to do next?</h2>
+
+        <p><a href="">Email a copy of the completed certificate</a></p>
+
+        <p><a href="">View the completed certificate (PDF)</a> 
+            
+        <p><a href="">Download a copy of the completed certificate (PDF)</a>
+            
+        <p><a href="">Print a copy of the completed certificate</a>
+        
+
+
+        <!---------------------- END CONTENT ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="ehco-cases.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Return to my cases
+        </button>
+      </a>
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}

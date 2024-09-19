@@ -1,0 +1,288 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+{% block beforeContent %}
+    
+<!-- PHASE BANNER -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is not a live service.
+      </span>
+    </p>
+  </div>
+<!-- END PHASE -->
+
+<!-- BACK LINK -->
+<a href="8361-p2-1-health.html#screen-top" class="govuk-back-link">Back</a>
+<!-- END BACK -->
+ 
+{% endblock %}
+
+
+{% block content %}
+
+<div id="screen-top" class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">EHC 8361</span>
+    <h1 class="govuk-heading-l">Part 2 - Certification</h1>
+
+    <h3 class="govuk-heading-m">General animal health</h3>
+
+        <!-------------------------- ATTESTATIONS -------------------------------->
+            
+
+            <!------ II.2.3 ------>
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+
+                    II.2.3<br>
+                    <b>General animal health requirement</b><br>
+                    The:
+                  </legend>
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="II_2_3a" name="II_2_3" type="radio" value="animals">
+                      <label class="govuk-label govuk-radios__label" for="II_2_3a">
+                        aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="II_2_3b" name="II_2_3" type="radio" value="poao">
+                      <label class="govuk-label govuk-radios__label" for="II_2_3b">
+                        products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements:
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div><!-- end radios -->
+
+                <!---- Sub Section 1 ---->
+                <div class="part2-subsection-1">
+
+                    <!------ II.2.3.1 ------>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend">
+                          II.2.3.1 <a href="#note-4">(4)</a><a href="#note-6">(6)</a><br><br>
+                          They are subject to the requirements in point II.2.4. and they originate from a:
+                        </legend>
+
+                        <div class="govuk-radios" data-module="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_3_1a" name="II_2_3_1" type="radio" value="country">
+                            <label class="govuk-label govuk-radios__label" for="II_2_3_1a">
+                              country <a href="#note-4">(4)</a> 
+                            </label>
+                          </div>
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" value="territory">
+                            <label class="govuk-label govuk-radios__label" for="II_2_3_1b">
+                              territory <a href="#note-4">(4)</a>
+                            </label>
+                          </div>
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" value="zone">
+                            <label class="govuk-label govuk-radios__label" for="II_2_3_1b">
+                              zone <a href="#note-4">(4)</a>
+                            </label>
+                          </div>
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" value="compartment">
+                            <label class="govuk-label govuk-radios__label" for="II_2_3_1b">
+                              compartment <a href="#note-4">(4)</a>
+                            </label>
+                          </div>
+
+                        </div>
+                      </fieldset>
+                    </div><!-- end radios -->
+
+                    <!---- TEXT INPUT ---->
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="width-5">
+                          with code <a href="#note-5">(5)</a>
+                        </label>
+                        <input class="govuk-input govuk-input--width-5" id="width-5" name="width5" type="text">
+                    </div><!-- end input-->
+
+                    <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <legend class="govuk-fieldset__legend">
+                            which, at the date of issue of this animal health/official certificate, is listed in Part 1 of Annex XXI to Commission Implementing Regulation (EU) 2021/404 for the entry into the Union of:
+                          </legend>
+                          <div class="govuk-radios" data-module="govuk-radios">
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="II_2_3a" name="II_2_3" type="radio" value="animals">
+                              <label class="govuk-label govuk-radios__label" for="II_2_3a">
+                                aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                              </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="II_2_3b" name="II_2_3" type="radio" value="poao">
+                              <label class="govuk-label govuk-radios__label" for="II_2_3b">
+                                products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements:
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div><!-- end radios -->
+
+                    <!------ II.2.3.2 ------>
+                          
+                        <p>II.2.3.2</p>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" value="II_1a">
+                            <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+                                They are aquatic animals which have undergone clinical inspection in accordance with Article 166 of Delegated Regulation (EU) 2020/692 within a period of 72 hours prior to the time of loading. During the inspection, the animals showed no signs of transmissible disease and, according to the relevant records of the establishment, there was no indication of disease problems;
+                            </label>
+                        </div>
+
+                    <!------ II.2.3.3 ------>
+                          
+                    <p>II.2.3.3 <a href="#note-11">(11)</a></p>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" value="II_1a">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+                            They are aquatic animals which are dispatched to the Union directly from the place of origin;
+                        </label>
+                    </div>
+
+                    <!------ II.2.3.4 ------>
+                          
+                    <p>II.2.3.4 </p>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" value="II_1a">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+                            They have not been in contact with aquatic animals of a lower health status.
+                        </label>
+                    </div>    
+
+                </div><!-- end subsection 1 -->
+
+          
+        <!------------------- END ATTESTATIONS --------------------->
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+        <!---------------------- FOOTNOTES -------------------------->
+
+        <h3 class="govuk-heading-s">Notes</h3>
+
+        <!-- footnote 4 -->
+        <details id="note-4" class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Note (4)
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Keep if appropriate/delete if not applicable. In the case of Part II.2.4.1., deletion is not permitted if the consignment contains listed species for Epizootic haematopoietic necrosis, infection with Taura syndrome virus or infection with yellow head virus, other than in the circumstances referred to in note (6).
+          </div>
+        </details>
+
+        <!-- footnote 5 -->
+        <details id="note-5" class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Note (5)
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+              Code of the third country or territory, or zone, or compartment thereof as it appears in column 2 of the table in Part 1 of Annex XXI to Implementing Regulation (EU) 2021/404.
+          </div>
+        </details>
+
+        <!-- footnote 6 -->
+        <details id="note-6" class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Note (6)
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            Parts II.2.3.1., II.2.3.2. and Part II.2.4. of this animal health/official certificate do not apply and shall be deleted if the consignment contains only the following crustaceans or fish:
+            <br><br>
+            (a) crustaceans which are packaged and labelled for human consumption in accordance with the specific requirements for those animals set out Regulation (EC) No 853/2004 and which are no longer able to survive as living animals if returned to the aquatic environment,
+            <br><br>
+            (b) crustaceans which are intended for human consumption without further processing, provided that they are packaged for retail sale in compliance with the requirements for such packages set out in Regulation (EC) No 853/2004,
+            <br><br>
+            (c) crustaceans which are packaged and labelled for human consumption in compliance with the specific requirements for those animals set out in Regulation (EC) No 853/2004 and which are intended for further processing without temporary storage at the place of processing,
+            <br><br>
+            (d) fish which are slaughtered and eviscerated before dispatch to the Union.
+          </div>
+        </details>
+
+        <!-- footnote 11 -->
+        <details id="note-11" class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Note (11)
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+              Part II.2.3.3. of this animal health/official certificate does not apply and shall be deleted if the consignment contains only the crustaceans referred to in note (6), points (a) to (c).
+          </div>
+        </details>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+          <!-- Back to top link -->
+          <div id="top-link"><p><a href="#screen-top">Back to top</a></p></div>
+
+
+        <!------------------------ END FOOTNOTES -------------------------------->
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-8"></div>
+
+        <!-------------------------- BUTTONS ------------------------------------->
+
+        <a href="8361-p2-3-specific.html">
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Save and continue
+            </button>
+          </a>
+    
+            <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Save as draft
+            </button>
+    
+        <!-------------------------- END BUTTONS ----------------------------------->
+
+    
+    </div> <!-- end two thirds -->
+    <div class="govuk-grid-column-one-third">
+
+
+        <!---------------------------- ASIDE ---------------------------------------->
+
+          <div class="app-step-nav-related aside-container">
+  
+            <h2 class="app-step-nav-related__heading">
+              <span class="govuk-heading-s app-step-nav-related__pretitle">Additional links</span>
+            </h2>
+  
+              <span class="app-step-nav-related__pretitle"></span>
+                <p class="govuk-body"><a href="template-from-export-name.html" class="govuk-link">Notes for guidance for EHC 8361</a></p>  
+            
+          </div><!-- end aside-->
+        
+        <!---------------------------- END ASIDE -------------------------------------->
+
+
+    </div><!-- end one third -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}

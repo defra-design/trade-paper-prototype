@@ -1,0 +1,110 @@
+{% extends "layouts/main-back.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">EHC 8361</span>
+    <h1 class="govuk-heading-l">Part 2 - Certify certificate</h1>
+
+    
+        <!------------------ TEXT INPUTS -------------------------->
+
+        <!-- Name -->
+        <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--s" for="name">
+                Full name
+              </label>
+            </h1>
+            <div id="event-name-hint" class="govuk-hint">
+                This will be used as your signature
+            </div>
+            <input class="govuk-input" id="event-name" name="name" type="text">
+          </div>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+        <!-- Stamp Number -->
+        <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--s" for="name">
+                Certification stamp number
+              </label>
+            </h1>
+            <div id="event-name-hint" class="govuk-hint">
+                For example SP000000
+            </div>
+            <input class="govuk-input govuk-!-width-one-quarter" id="event-name" name="name" type="text">
+          </div>
+
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+
+        <!-- Date of cert -->
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="certification-date">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  Date of certification
+                </h1>
+              </legend>
+              <div id="certification-date-hint" class="govuk-hint">
+                For example, 27 3 2024
+              </div>
+              <div class="govuk-date-input" id="certification-date">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="certification-date-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="certification-date-day" name="certification-date-day" type="text" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="certification-date-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="certification-date-month" name="certification-date-month" type="text" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="certification-date-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="certification-date-year" name="certification-date-year" type="text" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          
+
+        <!---------------------- END INPUTS ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8361-p2-success.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Certify
+        </button>
+      </a>
+
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}

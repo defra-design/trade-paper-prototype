@@ -1,0 +1,130 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+{% block beforeContent %}
+    
+<!-- PHASE BANNER -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is not a live service.
+      </span>
+    </p>
+  </div>
+<!-- END PHASE -->
+
+<!-- BACK LINK -->
+<a href="8361-p2-5-labelling.html#screen-top" class="govuk-back-link">Back</a>
+<!-- END BACK -->
+ 
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">EHC 8361</span>
+    <h1 class="govuk-heading-l">Part 2 - Certification</h1>
+
+    
+        <!------------------ ATTESTATIONS -------------------------->
+
+        
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        
+          <!------ II.2.8 ------>
+            <p><b>II.2.8</b> <a href="#note-4">(4)</a> <a href="#note-10">(10)</a></p></p>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="II_2_8" name="II_2_8" type="checkbox" value="selected">
+              <label class="govuk-label govuk-checkboxes__label" for="II_2_8">
+                <b>Validity of animal health/official certificate</b><br><br>
+                <p>This animal health/official certificate is valid for 10 days from the date of issue. In the case of transport by waterway/sea of aquatic animals, this period of 10 days may be extended by the duration of the journey by waterway/sea.</p>
+              </label>
+            </div>
+
+
+          <!------ END II.2.8 ------>
+
+          
+
+          <!---------------------- END ATTESTATIONS ------------------------>
+
+          <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+          <!----------------------- FOOTNOTES ------------------------->
+
+          <h3 class="govuk-heading-s">Notes</h3>
+
+          <!-- footnote 4 -->
+          <details id="note-4" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (4)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Keep if appropriate/delete if not applicable. In the case of Part II.2.4.1., deletion is not permitted if the consignment contains listed species for Epizootic haematopoietic necrosis, infection with Taura syndrome virus or infection with yellow head virus, other than in the circumstances referred to in note (6).
+            </div>
+          </details>
+
+           <!-- footnote 10 -->
+           <details id="note-10" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (10)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+                Shall apply only to the consignments of live aquatic animals.
+            </div>
+          </details>
+
+        </div>
+          
+        <!--------------------- END FOOTNOTES ---------------------------->
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-8"></div>
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8361-p2-7-notes.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </a>
+
+        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Save as draft
+        </button>
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+    <div class="govuk-grid-column-one-third">
+
+        <!------------------------- ASIDE ------------------------------->
+
+          <div class="app-step-nav-related aside-container">
+  
+            <h2 class="app-step-nav-related__heading">
+              <span class="govuk-heading-s app-step-nav-related__pretitle">Additional links</span>
+            </h2>
+  
+              <span class="app-step-nav-related__pretitle"></span>
+                <p class="govuk-body"><a href="template-from-export-name.html" class="govuk-link">Notes for guidance for EHC 8361</a></p>  
+            
+          </div><!-- end aside-->
+        
+        <!----------------------- END ASIDE ------------------------------>
+
+    </div><!-- end one third -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}

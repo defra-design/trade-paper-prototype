@@ -1,0 +1,67 @@
+{% extends "layouts/main-back.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    
+        <!------------------ RADIOS -------------------------->
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Would you like to preview all completed attestations before signing the certificate digitally?
+                </h1>
+              </legend>
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="previewAttestation" name="previewAttestation" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="previewAttestation">
+                    Yes, preview attestations
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="previewAttestation-2" name="previewAttestation" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="previewAttestation-2">
+                    No, continue to certify
+                  </label>
+                </div>
+                
+              </div>
+            </fieldset>
+          </div>
+    
+
+          
+
+        <!---------------------- END RADIOS ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8361-p2-certify.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </a>
+
+        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Save as draft
+        </button>
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}
