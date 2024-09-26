@@ -26,6 +26,82 @@
 
 {% block content %}
 
+<!------------------ JAVASCRIPT -------------------------->
+
+<script>
+
+// For turning the attestation strike throughs off and on
+//
+  
+// Section 2.3
+//----------
+
+// for II.2.3 (radios)
+
+//elements = 'II_2_3a', 'ii_2_3a_crossed', 'ii_2_3a_notcrossed', 'ii_2_3b_crossed', 'ii_2_3b_notcrossed'
+function showHideElementii23(radioId, elementId, elementId2, elementId3, elementId4) { 
+    const radio = document.getElementById(radioId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    const element3 = document.getElementById(elementId3);
+    const element4 = document.getElementById(elementId4); 
+    if (radio.checked) 
+    { 
+      element.style.display = "none"; // Hide the element
+      element2.style.display = "block"; // Show the element 
+      element3.style.display = "block"; // Show the element
+      element4.style.display = "none"; // Hide the element
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+    //elements = 'II_2_3_1', 'ii_2_3_1a_crossed', 'ii_2_3_1a_notcrossed', 'ii_2_3_1b_crossed', 'ii_2_3_1b_notcrossed', 'ii_2_3_1c_crossed', 'ii_2_3_1c_notcrossed', 'ii_2_3_1d_crossed', 'ii_2_3_1d_notcrossed'
+    function showHideElementii231(radioId, elementId, elementId2, elementId3, elementId4, elementId5, elementId6, elementId7, elementId8) { 
+    const radio = document.getElementById(radioId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    const element3 = document.getElementById(elementId3);
+    const element4 = document.getElementById(elementId4); 
+    const element5 = document.getElementById(elementId5); 
+    const element6 = document.getElementById(elementId6); 
+    const element7 = document.getElementById(elementId7); 
+    const element8 = document.getElementById(elementId8); 
+
+    if (radio.checked) 
+    { 
+      element.style.display = "none"; // Hide the element
+      element2.style.display = "block"; // Show the element
+      element3.style.display = "block"; // Show the element
+      element4.style.display = "none"; // Hide the element
+      element5.style.display = "block"; // Show the element 
+      element6.style.display = "none"; // Hide the element 
+      element7.style.display = "block"; // Show the element 
+      element8.style.display = "none"; // Hide the element   
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element
+    } }
+
+  // for II.2.3.2, II.2.3.3, II.2.3.4
+  function showHideElement232(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  </script>
+
+<!------------------ END JAVASCRIPT -------------------------->
+
+
 <div id="screen-top" class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
@@ -49,15 +125,39 @@
                   </legend>
                   <div class="govuk-radios" data-module="govuk-radios">
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="II_2_3a" name="II_2_3" type="radio" value="animals">
+                      <input class="govuk-radios__input" id="II_2_3a" name="II_2_3" type="radio" onclick="showHideElementii23('II_2_3a', 'ii_2_3a_crossed', 'ii_2_3a_notcrossed', 'ii_2_3b_crossed', 'ii_2_3b_notcrossed')">
                       <label class="govuk-label govuk-radios__label" for="II_2_3a">
-                        aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+
+                        <!-- CROSSED OUT -->
+                        <div id="ii_2_3a_crossed">
+                          <S>
+                            aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                          </S>
+                        </div><!-- end crossed -->
+              
+                        <!-- NOT CROSSED OUT -->
+                        <div id="ii_2_3a_notcrossed">
+                          aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                        </div><!-- end not crossed -->
+
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="II_2_3b" name="II_2_3" type="radio" value="poao">
+                      <input class="govuk-radios__input" id="II_2_3b" name="II_2_3" type="radio" onclick="showHideElementii23('II_2_3b', 'ii_2_3b_crossed', 'ii_2_3b_notcrossed', 'ii_2_3a_crossed', 'ii_2_3a_notcrossed')">
                       <label class="govuk-label govuk-radios__label" for="II_2_3b">
-                        products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements:
+
+                        <!-- CROSSED OUT -->
+                        <div id="ii_2_3b_crossed">
+                          <S>
+                            products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements: 
+                          </S>
+                        </div><!-- end crossed -->
+              
+                        <!-- NOT CROSSED OUT -->
+                        <div id="ii_2_3b_notcrossed">
+                          products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements:
+                        </div><!-- end not crossed -->
+
                       </label>
                     </div>
                   </div>
@@ -78,30 +178,78 @@
 
                         <div class="govuk-radios" data-module="govuk-radios">
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="II_2_3_1a" name="II_2_3_1" type="radio" value="country">
+                            <input class="govuk-radios__input" id="II_2_3_1a" name="II_2_3_1" type="radio" onclick="showHideElementii231('II_2_3_1a', 'ii_2_3_1a_crossed', 'ii_2_3_1a_notcrossed', 'ii_2_3_1b_crossed', 'ii_2_3_1b_notcrossed', 'ii_2_3_1c_crossed', 'ii_2_3_1c_notcrossed', 'ii_2_3_1d_crossed', 'ii_2_3_1d_notcrossed')">
                             <label class="govuk-label govuk-radios__label" for="II_2_3_1a">
-                              country <a href="#note-4">(4)</a> 
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_3_1a_crossed">
+                                <S>
+                                  country <a href="#note-4">(4)</a> 
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_3_1a_notcrossed">
+                                country <a href="#note-4">(4)</a>
+                              </div><!-- end not crossed -->
+
                             </label>
                           </div>
 
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" value="territory">
+                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" onclick="showHideElementii231('II_2_3_1b', 'ii_2_3_1b_crossed', 'ii_2_3_1b_notcrossed', 'ii_2_3_1a_crossed', 'ii_2_3_1a_notcrossed', 'ii_2_3_1c_crossed', 'ii_2_3_1c_notcrossed', 'ii_2_3_1d_crossed', 'ii_2_3_1d_notcrossed')">
                             <label class="govuk-label govuk-radios__label" for="II_2_3_1b">
-                              territory <a href="#note-4">(4)</a>
+                              
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_3_1b_crossed">
+                                <S>
+                                territory <a href="#note-4">(4)</a> 
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_3_1b_notcrossed">
+                                territory <a href="#note-4">(4)</a>
+                              </div><!-- end not crossed -->
+
                             </label>
                           </div>
 
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" value="zone">
+                            <input class="govuk-radios__input" id="II_2_3_1c" name="II_2_3_1" type="radio" onclick="showHideElementii231('II_2_3_1c', 'ii_2_3_1c_crossed', 'ii_2_3_1c_notcrossed', 'ii_2_3_1b_crossed', 'ii_2_3_1b_notcrossed', 'ii_2_3_1a_crossed', 'ii_2_3_1a_notcrossed', 'ii_2_3_1d_crossed', 'ii_2_3_1d_notcrossed')">
                             <label class="govuk-label govuk-radios__label" for="II_2_3_1b">
-                              zone <a href="#note-4">(4)</a>
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_3_1c_crossed">
+                                <S>
+                                  zone <a href="#note-4">(4)</a> 
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_3_1c_notcrossed">
+                                zone <a href="#note-4">(4)</a>
+                              </div><!-- end not crossed -->
+                              
                             </label>
                           </div>
 
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="II_2_3_1b" name="II_2_3_1" type="radio" value="compartment">
+                            <input class="govuk-radios__input" id="II_2_3_1d" name="II_2_3_1" type="radio" onclick="showHideElementii231('II_2_3_1d', 'ii_2_3_1d_crossed', 'ii_2_3_1d_notcrossed', 'ii_2_3_1b_crossed', 'ii_2_3_1b_notcrossed', 'ii_2_3_1c_crossed', 'ii_2_3_1c_notcrossed', 'ii_2_3_1a_crossed', 'ii_2_3_1a_notcrossed')">
                             <label class="govuk-label govuk-radios__label" for="II_2_3_1b">
-                              compartment <a href="#note-4">(4)</a>
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_3_1d_crossed">
+                                <S>
+                                compartment <a href="#note-4">(4)</a> 
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_3_1d_notcrossed">
+                                compartment <a href="#note-4">(4)</a>
+                              </div><!-- end not crossed -->
+
                             </label>
                           </div>
 
@@ -122,17 +270,42 @@
                           <legend class="govuk-fieldset__legend">
                             which, at the date of issue of this animal health/official certificate, is listed in Part 1 of Annex XXI to Commission Implementing Regulation (EU) 2021/404 for the entry into the Union of:
                           </legend>
+
                           <div class="govuk-radios" data-module="govuk-radios">
                             <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="II_2_3a" name="II_2_3" type="radio" value="animals">
-                              <label class="govuk-label govuk-radios__label" for="II_2_3a">
-                                aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                              <input class="govuk-radios__input" id="II_2_3_1a2" name="II_2_3" type="radio" onclick="showHideElementii23('II_2_3_1a2', 'ii_2_3_1a2_crossed', 'ii_2_3_1a2_notcrossed', 'ii_2_3_1b2_crossed', 'ii_2_3_1b2_notcrossed')">
+                              <label class="govuk-label govuk-radios__label" for="II_2_3_1a2">
+
+                                <!-- CROSSED OUT -->
+                                <div id="ii_2_3_1a2_crossed">
+                                  <S>
+                                    aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                                  </S>
+                                </div><!-- end crossed -->
+                      
+                                <!-- NOT CROSSED OUT -->
+                                <div id="ii_2_3_1a2_notcrossed">
+                                  aquatic animals described in Part 1 <a href="#note-4">(4)</a> 
+                                </div><!-- end not crossed -->
+
                               </label>
                             </div>
                             <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="II_2_3b" name="II_2_3" type="radio" value="poao">
-                              <label class="govuk-label govuk-radios__label" for="II_2_3b">
-                                products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements:
+                              <input class="govuk-radios__input" id="II_2_3_1b2" name="II_2_3" type="radio" onclick="showHideElementii23('II_2_3_1b2', 'ii_2_3_1b2_crossed', 'ii_2_3_1b2_notcrossed', 'ii_2_3_1a2_crossed', 'ii_2_3_1a2_notcrossed')">
+                              <label class="govuk-label govuk-radios__label" for="II_2_3_1b2">
+
+                                <!-- CROSSED OUT -->
+                                <div id="ii_2_3_1b2_crossed">
+                                  <S>
+                                    products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements: 
+                                  </S>
+                                </div><!-- end crossed -->
+                      
+                                <!-- NOT CROSSED OUT -->
+                                <div id="ii_2_3_1b2_notcrossed">
+                                  products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(4)</a> meet the following animal health requirements: 
+                                </div><!-- end not crossed -->
+                                
                               </label>
                             </div>
                           </div>
@@ -143,9 +316,21 @@
                           
                         <p>II.2.3.2</p>
                         <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" value="II_1a">
-                            <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+                            <input class="govuk-checkboxes__input" id="II_2_3_2" name="II_2_3_2" type="checkbox"  onchange="showHideElement232('II_2_3_2', 'ii_2_3_2_crossed', 'ii_2_3_2_notcrossed')">
+                            <label class="govuk-label govuk-checkboxes__label" for="II_2_3_2">
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_3_2_crossed">
+                                <S>
+                                  They are aquatic animals which have undergone clinical inspection in accordance with Article 166 of Delegated Regulation (EU) 2020/692 within a period of 72 hours prior to the time of loading. During the inspection, the animals showed no signs of transmissible disease and, according to the relevant records of the establishment, there was no indication of disease problems;
+                                </S>
+                              </div><!-- end crossed -->
+                  
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_3_2_notcrossed">
                                 They are aquatic animals which have undergone clinical inspection in accordance with Article 166 of Delegated Regulation (EU) 2020/692 within a period of 72 hours prior to the time of loading. During the inspection, the animals showed no signs of transmissible disease and, according to the relevant records of the establishment, there was no indication of disease problems;
+                              </div><!-- end not crossed -->
+
                             </label>
                         </div>
 
@@ -153,9 +338,21 @@
                           
                     <p>II.2.3.3 <a href="#note-11">(11)</a></p>
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" value="II_1a">
-                        <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+                        <input class="govuk-checkboxes__input" id="II_2_3_3" name="II_2_3_3" type="checkbox" onchange="showHideElement232('II_2_3_3', 'ii_2_3_3_crossed', 'ii_2_3_3_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_2_3_3">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_2_3_3_crossed">
+                            <S>
+                              They are aquatic animals which are dispatched to the Union directly from the place of origin;
+                            </S>
+                          </div><!-- end crossed -->
+              
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_2_3_3_notcrossed">
                             They are aquatic animals which are dispatched to the Union directly from the place of origin;
+                          </div><!-- end not crossed -->
+
                         </label>
                     </div>
 
@@ -163,9 +360,21 @@
                           
                     <p>II.2.3.4 </p>
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" value="II_1a">
-                        <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+                        <input class="govuk-checkboxes__input" id="II_2_3_4" name="II_2_3_4" type="checkbox" onchange="showHideElement232('II_2_3_4', 'ii_2_3_4_crossed', 'ii_2_3_4_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_2_3_4">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_2_3_4_crossed">
+                            <S>
+                              They have not been in contact with aquatic animals of a lower health status.
+                            </S>
+                          </div><!-- end crossed -->
+              
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_2_3_4_notcrossed">
                             They have not been in contact with aquatic animals of a lower health status.
+                          </div><!-- end not crossed -->
+
                         </label>
                     </div>    
 

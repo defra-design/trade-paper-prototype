@@ -46,14 +46,20 @@
     align-content: center;
 }
 
-// Section 1 attestations crossed out
+// Section 1 attestations crossed out (Health info)
 #ii_1_crossed, #ii_1a_crossed, #ii_1b_crossed, #ii_1c_crossed, #ii_1d_crossed, #ii_1e_crossed, #ii_1f_crossed, #ii_1g_crossed, #ii_1h_crossed, #ii_1i_crossed, #ii_1j_crossed
 {
   display:none;
 }
 
-// Section 2 attestations crossed out
+// Section 2 attestations crossed out (Health info)
 #ii_2_crossed, #ii_2_1a_crossed, #ii_2_1b_crossed, #ii_2_1_1a_crossed, #ii_2_1_1b_crossed, #ii_2_1_2a_crossed, #ii_2_1_2b_crossed, #ii_2_2a_crossed, #ii_2_2b_crossed, #ii_2_2_1a_crossed, #ii_2_2_1b_crossed, #ii_2_2_2_crossed
+{
+  display:none;
+}
+
+// Section 2 attestations crossed out (Animal health)
+#ii_2_3a_crossed, #ii_2_3b_crossed, #ii_2_3_1a_crossed, #ii_2_3_1b_crossed, #ii_2_3_1c_crossed, #ii_2_3_1d_crossed, #ii_2_3_1a2_crossed, #ii_2_3_1b2_crossed, #ii_2_3_2_crossed, #ii_2_3_3_crossed, #ii_2_3_4_crossed
 {
   display:none;
 }
