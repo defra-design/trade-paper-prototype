@@ -25,12 +25,14 @@ router.get('/', function (req, res) {
     res.render('./index')
   });
   
-  // Previous versions go here
-  //router.use('/v1', require('./views/v9/_routes'))
+// Previous versions go here
+  //router.use('/v1', require('./views/v1/_routes'))
 
-  // Latest version goes here
-  // V1 routes
-router.use('/v1/', (req, res, next) => {
+//----------------------------------------------------
+
+// Latest version goes here
+  // V2 routes
+router.use('/v2/', (req, res, next) => {
     //req.session.data["entered-criteria"] = undefined;
-    return require(`./views/v1/_routes`)(req, res, next);
+    return require(`./views/v2/_routes`)(req, res, next);
   })

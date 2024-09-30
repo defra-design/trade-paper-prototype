@@ -1,0 +1,1125 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+{% block beforeContent %}
+    
+<!-- PHASE BANNER -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is not a live service.
+      </span>
+    </p>
+  </div>
+<!-- END PHASE -->
+
+<!-- BACK LINK -->
+<a href="ehco-cases.html" class="govuk-back-link">Back</a>
+<!-- END BACK -->
+ 
+{% endblock %}
+
+
+{% block content %}
+
+<!------------------ JAVASCRIPT -------------------------->
+
+<script>
+
+// For turning the attestation strike throughs off and on
+//
+
+// Section 1
+//----------
+
+  // for II.1 - crosses out all of section 1 (inc subsections a to j)
+  function showHideElementii1(checkboxId, elementId, elementId2, elementId3, elementId4, elementId5, elementId6, elementId7, elementId8, elementId9, elementId10, elementId11, elementId12, elementId13, elementId14, elementId15, elementId16, elementId17, elementId18, elementId19, elementId20, elementId21, elementId22) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    const element3 = document.getElementById(elementId3);
+    const element4 = document.getElementById(elementId4);
+    const element5 = document.getElementById(elementId5);
+    const element6 = document.getElementById(elementId6);
+    const element7 = document.getElementById(elementId7);
+    const element8 = document.getElementById(elementId8);
+    const element9 = document.getElementById(elementId9);
+    const element10 = document.getElementById(elementId10);
+    const element11 = document.getElementById(elementId11);
+    const element12 = document.getElementById(elementId12);
+    const element13 = document.getElementById(elementId13);
+    const element14 = document.getElementById(elementId14);
+    const element15 = document.getElementById(elementId15);
+    const element16 = document.getElementById(elementId16);
+    const element17 = document.getElementById(elementId17);
+    const element18 = document.getElementById(elementId18);
+    const element19 = document.getElementById(elementId19);
+    const element20 = document.getElementById(elementId20);
+    const element21 = document.getElementById(elementId21);
+    const element22 = document.getElementById(elementId22);
+
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+      element3.style.display = "block"; // Show the element
+      element4.style.display = "none"; // Hide the element
+      element5.style.display = "block"; // Show the element
+      element6.style.display = "none"; // Hide the element
+      element7.style.display = "block"; // Show the element
+      element8.style.display = "none"; // Hide the element 
+      element9.style.display = "block"; // Show the element
+      element10.style.display = "none"; // Hide the element
+      element11.style.display = "block"; // Show the element
+      element12.style.display = "none"; // Hide the element 
+      element13.style.display = "block"; // Show the element
+      element14.style.display = "none"; // Hide the element 
+      element15.style.display = "block"; // Show the element
+      element16.style.display = "none"; // Hide the element 
+      element17.style.display = "block"; // Show the element
+      element18.style.display = "none"; // Hide the element 
+      element19.style.display = "block"; // Show the element
+      element20.style.display = "none"; // Hide the element
+      element21.style.display = "block"; // Show the element
+      element22.style.display = "none"; // Hide the element  
+
+    } else { 
+
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element
+      element3.style.display = "none"; // Hide the element 
+      element4.style.display = "block"; // Show the element
+      element5.style.display = "none"; // Hide the element 
+      element6.style.display = "block"; // Show the element
+      element7.style.display = "none"; // Hide the element 
+      element8.style.display = "block"; // Show the element
+      element9.style.display = "none"; // Hide the element 
+      element10.style.display = "block"; // Show the element
+      element11.style.display = "none"; // Hide the element 
+      element12.style.display = "block"; // Show the element
+      element13.style.display = "none"; // Hide the element 
+      element14.style.display = "block"; // Show the element
+      element15.style.display = "none"; // Hide the element 
+      element16.style.display = "block"; // Show the element
+      element17.style.display = "none"; // Hide the element 
+      element18.style.display = "block"; // Show the element
+      element19.style.display = "none"; // Hide the element 
+      element20.style.display = "block"; // Show the element
+      element21.style.display = "none"; // Hide the element 
+      element22.style.display = "block"; // Show the element
+
+    } }
+
+
+  // for II.1a
+  function showHideElementii1a(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1b
+  function showHideElementii1b(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1c
+  function showHideElementii1c(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1d
+  function showHideElementii1d(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1e
+  function showHideElementii1e(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1f
+  function showHideElementii1f(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+  
+  // for II.1g
+  function showHideElementii1g(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1h
+  function showHideElementii1h(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+  
+    
+    // for II.1i
+    function showHideElementii1i(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+  // for II.1j
+  function showHideElementii1j(checkboxId, elementId, elementId2) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+
+// Section 2
+//----------
+
+// for II.2 - crosses out all of section 2
+function showHideElementii2(checkboxId, elementId, elementId2, elementId3, elementId4, elementId5, elementId6, elementId7, elementId8, elementId9, elementId10, elementId11, elementId12, elementId13, elementId14, elementId15, elementId16, elementId17, elementId18, elementId19, elementId20, elementId21, elementId22, elementId23, elementId24) { 
+    const checkbox = document.getElementById(checkboxId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    const element3 = document.getElementById(elementId3);
+    const element4 = document.getElementById(elementId4);
+    const element5 = document.getElementById(elementId5);
+    const element6 = document.getElementById(elementId6); 
+    const element7 = document.getElementById(elementId7);
+    const element8 = document.getElementById(elementId8);
+    const element9 = document.getElementById(elementId9);
+    const element10 = document.getElementById(elementId10);
+    const element11 = document.getElementById(elementId11);
+    const element12 = document.getElementById(elementId12);
+    const element13 = document.getElementById(elementId13);
+    const element14 = document.getElementById(elementId14);
+    const element15 = document.getElementById(elementId15);
+    const element16 = document.getElementById(elementId16);
+    const element17 = document.getElementById(elementId17);
+    const element18 = document.getElementById(elementId18);
+    const element19 = document.getElementById(elementId19);
+    const element20 = document.getElementById(elementId20);
+    const element21 = document.getElementById(elementId21);
+    const element22 = document.getElementById(elementId22);
+    const element23 = document.getElementById(elementId23);
+    const element24 = document.getElementById(elementId24);
+
+    
+
+    if (checkbox.checked) 
+    { 
+      element.style.display = "block"; // Show the element
+      element2.style.display = "none"; // Hide the element 
+      element3.style.display = "block"; // Show the element
+      element4.style.display = "none"; // Hide the element
+      element5.style.display = "block"; // Show the element
+      element6.style.display = "none"; // Hide the element
+      element7.style.display = "block"; // Show the element
+      element8.style.display = "none"; // Hide the element 
+      element9.style.display = "block"; // Show the element
+      element10.style.display = "none"; // Hide the element
+      element11.style.display = "block"; // Show the element
+      element12.style.display = "none"; // Hide the element 
+      element13.style.display = "block"; // Show the element
+      element14.style.display = "none"; // Hide the element
+      element15.style.display = "block"; // Show the element
+      element16.style.display = "none"; // Hide the element 
+      element17.style.display = "block"; // Show the element
+      element18.style.display = "none"; // Hide the element
+      element19.style.display = "block"; // Show the element
+      element20.style.display = "none"; // Hide the element
+      element21.style.display = "block"; // Show the element
+      element22.style.display = "none"; // Hide the element
+      element23.style.display = "block"; // Show the element
+      element24.style.display = "none"; // Hide the element
+
+      
+      
+
+    } else { 
+
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element
+      element3.style.display = "none"; // Hide the element 
+      element4.style.display = "block"; // Show the element
+      element5.style.display = "none"; // Hide the element 
+      element6.style.display = "block"; // Show the element
+      element7.style.display = "none"; // Hide the element 
+      element8.style.display = "block"; // Show the element
+      element9.style.display = "none"; // Hide the element 
+      element10.style.display = "block"; // Show the element
+      element11.style.display = "none"; // Hide the element 
+      element12.style.display = "block"; // Show the element
+      element13.style.display = "none"; // Hide the element 
+      element14.style.display = "block"; // Show the element
+      element15.style.display = "none"; // Hide the element 
+      element16.style.display = "block"; // Show the element
+      element17.style.display = "none"; // Hide the element 
+      element18.style.display = "block"; // Show the element
+      element19.style.display = "none"; // Hide the element 
+      element20.style.display = "block"; // Show the element
+      element21.style.display = "none"; // Hide the element 
+      element22.style.display = "block"; // Show the element
+      element23.style.display = "none"; // Hide the element 
+      element24.style.display = "block"; // Show the element
+
+    } }
+
+
+// for II.2.1 (radio)
+
+// elements = 'II_2_1a', 'ii_2_1a_crossed', 'ii_2_1a_notcrossed', 'ii_2_1b_crossed', 'ii_2_1b_notcrossed'
+function showHideElementii21a(radioId, elementId, elementId2, elementId3, elementId4) { 
+    const radio = document.getElementById(radioId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    const element3 = document.getElementById(elementId3);
+    const element4 = document.getElementById(elementId4); 
+    if (radio.checked) 
+    { 
+      element.style.display = "none"; // Hide the element
+      element2.style.display = "block"; // Show the element 
+      element3.style.display = "block"; // Show the element
+      element4.style.display = "none"; // Hide the element
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element 
+    } }
+
+    //elements = 'II_2_1b', 'ii_2_1b_crossed', 'ii_2_1b_notcrossed', 'ii_2_1a_crossed', 'ii_2_1a_notcrossed'
+    function showHideElementii21b(radioId, elementId, elementId2, elementId3, elementId4) { 
+    const radio = document.getElementById(radioId); 
+    const element = document.getElementById(elementId); 
+    const element2 = document.getElementById(elementId2); 
+    const element3 = document.getElementById(elementId3);
+    const element4 = document.getElementById(elementId4); 
+    if (radio.checked) 
+    { 
+      element.style.display = "none"; // Show the element
+      element2.style.display = "block"; // Hide the element
+      element3.style.display = "block"; // Hide the element
+      element4.style.display = "none"; // Show the element  
+    } else { 
+      element.style.display = "none"; // Hide the element 
+      element2.style.display = "block"; // Show the element
+    } }
+
+  </script>
+
+
+<!----------------------------------- END JAVASCRIPT ---------------------------------------->
+
+
+<div id="screen-top" class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">EHC 8361</span>
+    <h1 class="govuk-heading-l">Part 2 - Certification</h1>
+
+    <p>Read the <a href="https://www.gov.uk/export-health-certificates/live-fish-crustaceans-and-products-from-these-animals-intended-for-human-consumption-to-the-european-union-and-northern-ireland-certificate-8361#check-what-you-need-for-your-export" target="_blank">notes for guidance for EHC 8361 (opens in a new tab)</a> to make sure you’re informed of the latest updates.</p>
+
+    <h3 class="govuk-heading-m">Health information</h3>
+
+    
+        <!------------------ ATTESTATIONS -------------------------->
+
+        
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+        
+          <!------ II.1 ------>
+            <p>II.1</p>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="II_1" name="II_1" type="checkbox" onchange="showHideElementii1('II_1', 'ii_1_crossed', 'ii_1_notcrossed', 'ii_1a_crossed', 'ii_1a_notcrossed', 'ii_1b_crossed', 'ii_1b_notcrossed', 'ii_1c_crossed', 'ii_1c_notcrossed', 'ii_1d_crossed', 'ii_1d_notcrossed', 'ii_1e_crossed', 'ii_1e_notcrossed', 'ii_1f_crossed', 'ii_1f_notcrossed', 'ii_1g_crossed', 'ii_1g_notcrossed', 'ii_1h_crossed', 'ii_1h_notcrossed', 'ii_1i_crossed', 'ii_1i_notcrossed', 'ii_1j_crossed', 'ii_1j_notcrossed')">
+              <label class="govuk-label govuk-checkboxes__label" for="II_1">
+                <div id="ii_1_crossed">
+                
+                  <!-- CROSSED OUT -->
+                  <S>
+                  <b>Public health attestation</b><br>Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals <a href="#note-1">(Note 1)</a> 
+                  <br><br>
+                  I, the undersigned, declare that I am aware of the relevant requirements of <a href="https://www.legislation.gov.uk/eur/2002/178/contents" target="_blank" >Regulation (EC) No 178/2002 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="https://www.legislation.gov.uk/eur/2004/852/contents" target="_blank" >Regulation (EC) No 852/2004 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="">Regulation (EC) No 853/2004 (opens in a new tab)</a> of the European Parliament and of the Council and <a href="">Regulation (EU) 2017/625 (opens in a new tab)</a> of the European Parliament and of the Council and hereby certify that the fishery products described in Part I were produced in accordance with these requirements, in particular that they:
+                  </S>
+  
+              </div><!-- end crossed -->
+  
+              <div id="ii_1_notcrossed">
+  
+                  <!-- NOT CROSSED OUT -->
+  
+                  <b>Public health attestation</b><br> Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals <a href="#note-1">(Note 1)</a> 
+                  <br><br>
+                  I, the undersigned, declare that I am aware of the relevant requirements of <a href="https://www.legislation.gov.uk/eur/2002/178/contents" target="_blank" >Regulation (EC) No 178/2002 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="https://www.legislation.gov.uk/eur/2004/852/contents" target="_blank" >Regulation (EC) No 852/2004 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="">Regulation (EC) No 853/2004 (opens in a new tab)</a> of the European Parliament and of the Council and <a href="">Regulation (EU) 2017/625 (opens in a new tab)</a> of the European Parliament and of the Council and hereby certify that the fishery products described in Part I were produced in accordance with these requirements, in particular that they:
+  
+              </div><!-- end not crossed -->
+
+              </label>
+            </div>
+
+            <!---- Sub Section 1 ---->
+            <div class="part2-subsection-1">
+
+
+                    <!-- II.1a -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1a" name="II_1a" type="checkbox" onchange="showHideElementii1a('II_1a', 'ii_1a_crossed', 'ii_1a_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1a">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1a_crossed">
+                            <S>
+                              a) have been obtained in the region(s) or country(ies) which, at the date of issue of this animal health/official certificate is/are authorised for the entry into the Union of fishery products and in Annex IX to Commission Implementing <a href="https://eur-lex.europa.eu/eli/reg_impl/2021/405/oj" target="_blank">Regulation (EU) 2021/405 (opens in a new tab)</a>;
+                            </S>
+                        </div><!-- end crossed -->
+            
+                        <!-- NOT CROSSED OUT -->
+                        <div id="ii_1a_notcrossed">
+                            a) have been obtained in the region(s) or country(ies) which, at the date of issue of this animal health/official certificate is/are authorised for the entry into the Union of fishery products and in Annex IX to Commission Implementing <a href="https://eur-lex.europa.eu/eli/reg_impl/2021/405/oj" target="_blank">Regulation (EU) 2021/405 (opens in a new tab)</a>;
+                        </div><!-- end not crossed -->
+
+                        </label>
+                    </div>
+
+                    
+                    <!-- II.1b -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1b" name="II_1b" type="checkbox"  onchange="showHideElementii1b('II_1b', 'ii_1b_crossed', 'ii_1b_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1b">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1b_crossed">
+                            <S>
+                              b) come from (an) establishment(s) applying general hygiene requirements and implementing a programme based on the hazard analysis and critical control points (HACCP) principles in accordance with Article 5 of <a href="https://www.legislation.gov.uk/eur/2004/852/article/5" target="_blank">Regulation (EC) No 852/2004 (opens in a new tab)</a>, regularly audited by the competent authorities, and is listed as a Union approved establishment;
+                            </S>
+                          </div><!-- end crossed -->
+              
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1b_notcrossed">
+                              b) come from (an) establishment(s) applying general hygiene requirements and implementing a programme based on the hazard analysis and critical control points (HACCP) principles in accordance with Article 5 of <a href="https://www.legislation.gov.uk/eur/2004/852/article/5" target="_blank">Regulation (EC) No 852/2004 (opens in a new tab)</a>, regularly audited by the competent authorities, and is listed as a Union approved establishment;
+                          </div><!-- end not crossed -->
+
+                        </label>
+                    </div>
+
+
+                    <!-- II.1c -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1c" name="II_1c" type="checkbox" onchange="showHideElementii1c('II_1c', 'ii_1c_crossed', 'ii_1c_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1c">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1c_crossed">
+                            <S>
+                              c) have been caught and handled on board vessels, landed, handled and where appropriate prepared, processed, frozen and thawed hygienically in compliance with the requirements laid down in Section VIII, Chapters I to IV, of Annex III to <a href="https://www.legislation.gov.uk/eur/2004/853/annex/III" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a>;
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1c_notcrossed">
+                              c) have been caught and handled on board vessels, landed, handled and where appropriate prepared, processed, frozen and thawed hygienically in compliance with the requirements laid down in Section VIII, Chapters I to IV, of Annex III to <a href="https://www.legislation.gov.uk/eur/2004/853/annex/III" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a>;
+                          </div><!-- end not crossed -->
+
+                        </label>
+                    </div>
+
+
+                    <!-- II.1d -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1d" name="II_1d" type="checkbox" onchange="showHideElementii1d('II_1d', 'ii_1d_crossed', 'ii_1d_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1d">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1d_crossed">
+                            <S>
+                              d) have not been stored in holds, tanks or containers used for other purposes than the production and/or storage of fishery products;
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1d_notcrossed">
+                            d) have not been stored in holds, tanks or containers used for other purposes than the production and/or storage of fishery products;
+                          </div><!-- end not crossed -->
+                            
+                        </label>
+                    </div>
+
+
+                    <!-- II.1e -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1e" name="II_1e" type="checkbox" onchange="showHideElementii1e('II_1e', 'ii_1e_crossed', 'ii_1e_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1e">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1e_crossed">
+                            <S>
+                              e) satisfy the health standards laid down in Section VIII, Chapter V, of Annex III to <a href="https://www.legislation.gov.uk/eur/2004/853/annex/III" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a> and the criteria laid down in Commission <a href="https://www.legislation.gov.uk/eur/2005/2073" target="_blank">Regulation (EC) No 2073/2005 (opens in a new tab)</a>;
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1e_notcrossed">
+                            e) satisfy the health standards laid down in Section VIII, Chapter V, of Annex III to <a href="https://www.legislation.gov.uk/eur/2004/853/annex/III" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a> and the criteria laid down in Commission <a href="https://www.legislation.gov.uk/eur/2005/2073" target="_blank">Regulation (EC) No 2073/2005 (opens in a new tab)</a>;
+                          </div><!-- end not crossed -->
+
+                        </label>
+                    </div>
+
+
+                    <!-- II.1f -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1f" name="II_1f" type="checkbox" onchange="showHideElementii1f('II_1f', 'ii_1f_crossed', 'ii_1f_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1f">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1f_crossed">
+                            <S>
+                              f) have been packaged, stored and transported in compliance with Section VIII, Chapters VI to VIII, of Annex III to <a href="https://www.legislation.gov.uk/eur/2004/853/annex/III" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a>;
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1f_notcrossed">
+                            f) have been packaged, stored and transported in compliance with Section VIII, Chapters VI to VIII, of Annex III to <a href="https://www.legislation.gov.uk/eur/2004/853/annex/III" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a>;
+                          </div><!-- end not crossed -->
+                            
+                        </label>
+                    </div>
+
+
+                    <!-- II.1g -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1g" name="II.1g" type="checkbox" onchange="showHideElementii1g('II_1g', 'ii_1g_crossed', 'ii_1g_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1g">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1g_crossed">
+                            <S>
+                            g) have been marked in accordance with Section I of Annex II to  <a href="https://www.legislation.gov.uk/eur/2004/853/annex/II" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a>;
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1g_notcrossed">
+                            g) have been marked in accordance with Section I of Annex II to  <a href="https://www.legislation.gov.uk/eur/2004/853/annex/II" target="_blank">Regulation (EC) No 853/2004 (opens in a new tab)</a>;
+                          </div><!-- end not crossed -->
+                          
+                        </label>
+                    </div>
+
+
+                    <!-- II.1h -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1h" name="II_1h" type="checkbox" onchange="showHideElementii1h('II_1h', 'ii_1h_crossed', 'ii_1h_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1h">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1h_crossed">
+                            <S>
+                              h) fulfil the guarantees covering live animals and products thereof, if of aquaculture origin, provided by the control plan submitted in accordance with Article 6(2) of Commission Delegated <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?toc=OJ%3AL%3A2022%3A304%3ATOC&uri=uriserv%3AOJ.L_.2022.304.01.0001.01.ENG" target="_blank">Regulation (EU) 2022/2292 (opens in a new tab)</a> and the concerned animals and products are listed in Annex -I to Implementing <a href="https://eur-lex.europa.eu/eli/reg_impl/2021/405/oj" target="_blank">Regulation (EU) 2021/405 (opens in a new tab)</a> for the concerned third country or territory;
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1h_notcrossed">
+                            h) fulfil the guarantees covering live animals and products thereof, if of aquaculture origin, provided by the control plan submitted in accordance with Article 6(2) of Commission Delegated <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?toc=OJ%3AL%3A2022%3A304%3ATOC&uri=uriserv%3AOJ.L_.2022.304.01.0001.01.ENG" target="_blank">Regulation (EU) 2022/2292 (opens in a new tab)</a> and the concerned animals and products are listed in Annex -I to Implementing <a href="https://eur-lex.europa.eu/eli/reg_impl/2021/405/oj" target="_blank">Regulation (EU) 2021/405 (opens in a new tab)</a> for the concerned third country or territory;
+                          </div><!-- end not crossed -->
+                            
+                        </label>
+                    </div>
+
+
+                    <!-- II.1i -->
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="II_1i" name="II_1i" type="checkbox" onchange="showHideElementii1i('II_1i', 'ii_1i_crossed', 'ii_1i_notcrossed')">
+                      <label class="govuk-label govuk-checkboxes__label" for="II_1i">
+
+                        <!-- CROSSED OUT -->
+                        <div id="ii_1i_crossed">
+                          <S>
+                            i) for the live animals from wild catch and products thereof monitoring arrangements are in place to control compliance with the Union legislation on contaminants, in accordance with Commission <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0915" target="_blank">Regulation (EU) 2023/915 (opens in a new tab)</a> on maximum levels for certain contaminants in food and on pesticide residues and in accordance with <a href="https://www.legislation.gov.uk/eur/2005/396/contents" target="_blank">Regulation (EC) No 396/2005 (opens in a new tab)</a> of the European Parliament and of the Council on maximum residue levels of pesticides in or on food and feed of plant and animal origin;
+                          </S>
+                        </div><!-- end crossed -->
+              
+                        <!-- NOT CROSSED OUT -->
+                        <div id="ii_1i_notcrossed">
+                          i) for the live animals from wild catch and products thereof monitoring arrangements are in place to control compliance with the Union legislation on contaminants, in accordance with Commission <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0915" target="_blank">Regulation (EU) 2023/915 (opens in a new tab)</a> on maximum levels for certain contaminants in food and on pesticide residues and in accordance with <a href="https://www.legislation.gov.uk/eur/2005/396/contents" target="_blank">Regulation (EC) No 396/2005 (opens in a new tab)</a> of the European Parliament and of the Council on maximum residue levels of pesticides in or on food and feed of plant and animal origin;
+                        </div><!-- end not crossed -->
+
+                      </label>
+                  </div>
+
+
+                    <!-- II.1j -->
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_1j" name="II_1j" type="checkbox" onchange="showHideElementii1j('II_1j', 'ii_1j_crossed', 'ii_1j_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_1j">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_1j_crossed">
+                            <S>
+                              j) have satisfactorily undergone the official controls laid down in Articles 67 to 71 of Commission Implementing <a href="https://www.legislation.gov.uk/eur/2019/627/contents" target="_blank">Regulation (EU) 2019/627 (opens in a new tab)</a>.
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_1j_notcrossed">
+                            j) have satisfactorily undergone the official controls laid down in Articles 67 to 71 of Commission Implementing <a href="https://www.legislation.gov.uk/eur/2019/627/contents" target="_blank">Regulation (EU) 2019/627 (opens in a new tab)</a>
+                          </div><!-- end not crossed -->
+
+                        </label>
+                    </div>
+
+            </div><!-- end subsection 1 -->
+
+          <!------ END II.1 ------>
+
+          <!------ II.2 ------>
+
+            <p>II.2</p>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="II_2" name="II_2" type="checkbox" onchange="showHideElementii2('II_2', 'ii_2_crossed', 'ii_2_notcrossed', 'ii_2_1a_crossed', 'ii_2_1a_notcrossed', 'ii_2_1b_crossed', 'ii_2_1b_notcrossed', 'ii_2_1_1a_crossed', 'ii_2_1_1a_notcrossed', 'ii_2_1_1b_crossed', 'ii_2_1_1b_notcrossed', 'ii_2_1_2a_crossed', 'ii_2_1_2a_notcrossed', 'ii_2_1_2b_crossed', 'ii_2_1_2b_notcrossed', 'ii_2_2a_crossed', 'ii_2_2a_notcrossed', 'ii_2_2b_crossed', 'ii_2_2b_notcrossed', 'ii_2_2_1a_crossed', 'ii_2_2_1a_notcrossed', 'ii_2_2_1b_crossed', 'ii_2_2_1b_notcrossed', 'ii_2_2_2_crossed', 'ii_2_2_2_notcrossed')">
+              <label class="govuk-label govuk-checkboxes__label" for="II_2">
+
+                <!-- CROSSED OUT -->
+                <div id="ii_2_crossed">
+                  <S>
+                    <b>Animal health attestation for live fish and live crustaceans of listed <a href="#note-3">(Note 3)</a> species intended for human consumption and products of animal origin from those aquatic animals intended for further processing in the Union before human consumption, excluding live fish and live crustaceans and their products landed from fishing vessels <a href="#note-2">(Note 2)</a> </b>
+                  </S>
+                </div><!-- end crossed -->
+      
+                <!-- NOT CROSSED OUT -->
+                <div id="ii_2_notcrossed">
+                  <b>Animal health attestation for live fish and live crustaceans of listed <a href="#note-3">(Note 3)</a> species intended for human consumption and products of animal origin from those aquatic animals intended for further processing in the Union before human consumption, excluding live fish and live crustaceans and their products landed from fishing vessels <a href="#note-2">(Note 2)</a> </b>
+                </div><!-- end not crossed -->
+        
+              </label>
+            </div>
+
+            <!------ II.2.1 ------>
+
+            <!---- Sub Section 1 ---->
+            <div class="part2-subsection-1">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+
+                    II.2.1<br><br>
+                    According to official information the:
+                  </legend>
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="II_2_1a" name="II_2_1" type="radio" onclick="showHideElementii21a('II_2_1a', 'ii_2_1a_crossed', 'ii_2_1a_notcrossed', 'ii_2_1b_crossed', 'ii_2_1b_notcrossed')">
+                      <label class="govuk-label govuk-radios__label" for="II_2_1a">
+
+                        <!-- CROSSED OUT -->
+                        <div id="ii_2_1a_crossed">
+                          <S>
+                            aquatic animals described in Part 1 <a href="#note-4">(Note 4)</a> 
+                          </S>
+                        </div><!-- end crossed -->
+              
+                        <!-- NOT CROSSED OUT -->
+                        <div id="ii_2_1a_notcrossed">
+                          aquatic animals described in Part 1 <a href="#note-4">(Note 4)</a> 
+                        </div><!-- end not crossed -->
+
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="II_2_1b" name="II_2_1" type="radio" onclick="showHideElementii21b('II_2_1b', 'ii_2_1b_crossed', 'ii_2_1b_notcrossed', 'ii_2_1a_crossed', 'ii_2_1a_notcrossed')">
+                      <label class="govuk-label govuk-radios__label" for="II_2_1b">
+
+                        <!-- CROSSED OUT -->
+                        <div id="ii_2_1b_crossed">
+                          <S>
+                            products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(Note 4)</a> meet the following animal health requirements: 
+                          </S>
+                        </div><!-- end crossed -->
+              
+                        <!-- NOT CROSSED OUT -->
+                        <div id="ii_2_1b_notcrossed">
+                          products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="#note-4">(Note 4)</a> meet the following animal health requirements:
+                        </div><!-- end not crossed -->
+
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+                    <!---- Sub Section 2 ---->
+                    <div class="part2-subsection-2">
+
+                    <!------ II.2.1.1 ------>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend">
+                          
+                          II.2.1.1<br><br>
+                          They originate from:
+                        </legend>
+                        <div class="govuk-radios" data-module="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_1_1a" name="II_2_1_1" type="radio" onclick="showHideElementii21a('II_2_1_1a', 'ii_2_1_1a_crossed', 'ii_2_1_1a_notcrossed', 'ii_2_1_1b_crossed', 'ii_2_1_1b_notcrossed')">
+                            <label class="govuk-label govuk-radios__label" for="II_2_1_1a">
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_1_1a_crossed">
+                                <S>
+                                  an establishment <a href="#note-4">(Note 4)</a>  
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_1_1a_notcrossed">
+                                an establishment <a href="#note-4">(Note 4)</a> 
+                              </div><!-- end not crossed -->
+
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_1_1b" name="II_2_1_1" type="radio" onclick="showHideElementii21a('II_2_1_1b', 'ii_2_1_1b_crossed', 'ii_2_1_1b_notcrossed', 'ii_2_1_1a_crossed', 'ii_2_1_1a_notcrossed')">
+                            <label class="govuk-label govuk-radios__label" for="II_2_1_1b">
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_1_1b_crossed">
+                                <S>
+                                  a habitat <a href="#note-4">(Note 4)</a> 
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_1_1b_notcrossed">
+                                a habitat <a href="#note-4">(Note 4)</a> 
+                              </div><!-- end not crossed -->
+
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <p>which is not subject to national restriction measures for animal health reasons or because of the occurrence of abnormal mortalities with an undetermined cause including the relevant listed diseases referred to in Annex 1 to Commission Delegated Regulation (EU) 2020/692</p>
+
+                    <!------ II.2.1.2 ------>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend">
+                          
+                          II.2.1.2
+                        </legend>
+                        <div class="govuk-radios" data-module="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_1_2a" name="II_2_1_2" type="radio" onclick="showHideElementii21a('II_2_1_2a', 'ii_2_1_2a_crossed', 'ii_2_1_2a_notcrossed', 'ii_2_1_2b_crossed', 'ii_2_1_2b_notcrossed')">
+                            <label class="govuk-label govuk-radios__label" for="II_2_1_2a">
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_1_2a_crossed">
+                                <S>
+                                  aquatic animals are not intended to be killed <a href="#note-4">(Note 4)</a>   
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_1_2a_notcrossed">
+                                aquatic animals are not intended to be killed <a href="#note-4">(Note 4)</a>  
+                              </div><!-- end not crossed -->
+
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_1_2b" name="II_2_1_2" type="radio" onclick="showHideElementii21a('II_2_1_2b', 'ii_2_1_2b_crossed', 'ii_2_1_2b_notcrossed', 'ii_2_1_2a_crossed', 'ii_2_1_2a_notcrossed')">
+                            <label class="govuk-label govuk-radios__label" for="II_2_1_2b">
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_1_2b_crossed">
+                                <S>
+                                  products of animal origin from aquatic animals other than live aquatic animals, have been obtained from animals which were not intended to be killed <a href="">(4)</a> 
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_1_2b_notcrossed">
+                                products of animal origin from aquatic animals other than live aquatic animals, have been obtained from animals which were not intended to be killed <a href="">(4)</a>
+                              </div><!-- end not crossed -->
+
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <p>under a national programme for the eradication of diseases, including the listed diseases referred to in Annex I to Delegated Regulation (EU) 2020/692 relevant for the species and emerging diseases.</p>
+
+                  </div><!-- end subsection 2 -->
+            </div><!-- end subsection 1 -->
+
+
+            <!---- Sub Section 1 ---->
+            <div class="part2-subsection-1">
+
+            <!------ END II.2.1 ------>
+
+            <!------ II.2.2 ------>
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend">
+
+                  II.2.2 <a href="#note-4">(Note 4)</a><br><br>
+                  The:
+                </legend>
+                <div class="govuk-radios" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="II_2_2a" name="II_2_2" type="radio" onclick="showHideElementii21a('II_2_2a', 'ii_2_2a_crossed', 'ii_2_2a_notcrossed', 'ii_2_2b_crossed', 'ii_2_2b_notcrossed')">
+                    <label class="govuk-label govuk-radios__label" for="II_2_2a">
+
+                      <!-- CROSSED OUT -->
+                      <div id="ii_2_2a_crossed">
+                        <S>
+                          aquatic animals described in Part 1 <a href="#note-4">(Note 4)</a>   
+                        </S>
+                      </div><!-- end crossed -->
+            
+                      <!-- NOT CROSSED OUT -->
+                      <div id="ii_2_2a_notcrossed">
+                        aquatic animals described in Part 1 <a href="#note-4">(Note 4)</a>  
+                      </div><!-- end not crossed -->
+
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="II_2_2b" name="II_2_2" type="radio" onclick="showHideElementii21a('II_2_2b', 'ii_2_2b_crossed', 'ii_2_2b_notcrossed', 'ii_2_2a_crossed', 'ii_2_2a_notcrossed')">
+                    <label class="govuk-label govuk-radios__label" for="II_2_2b">
+
+                      <!-- CROSSED OUT -->
+                      <div id="ii_2_2b_crossed">
+                        <S>
+                          products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="">(4)</a>  meet the following animal health requirements: 
+                        </S>
+                      </div><!-- end crossed -->
+            
+                      <!-- NOT CROSSED OUT -->
+                      <div id="ii_2_2b_notcrossed">
+                        products of animal origin from aquatic animals other than live aquatic animals described in Part 1, have been obtained from animals which <a href="">(4)</a>  meet the following animal health requirements:
+                      </div><!-- end not crossed -->
+
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+                    <!---- Sub Section 2 ---->
+                    <div class="part2-subsection-2">
+
+                    <!------ II.2.2.1 ------>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend">
+                          
+                          II.2.2.1<br><br>
+                          They originate from:
+                        </legend>
+                        <div class="govuk-radios" data-module="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_2_1a" name="II_2_2_1" type="radio" onclick="showHideElementii21a('II_2_2_1a', 'ii_2_2_1a_crossed', 'ii_2_2_1a_notcrossed', 'ii_2_2_1b_crossed', 'ii_2_2_1b_notcrossed')">
+                            <label class="govuk-label govuk-radios__label" for="II_2_2_1a">
+
+                              <!-- CROSSED OUT -->
+                                <div id="ii_2_2_1a_crossed">
+                                  <S>
+                                  registered <a href="#note-4">(Note 4)</a>    
+                                  </S>
+                                </div><!-- end crossed -->
+                      
+                                <!-- NOT CROSSED OUT -->
+                                <div id="ii_2_2_1a_notcrossed">
+                                  registered <a href="#note-4">(Note 4)</a> 
+                                </div><!-- end not crossed -->
+
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="II_2_2_1b" name="II_2_2_1" type="radio" onclick="showHideElementii21a('II_2_2_1b', 'ii_2_2_1b_crossed', 'ii_2_2_1b_notcrossed', 'ii_2_2_1a_crossed', 'ii_2_2_1a_notcrossed')">
+                            <label class="govuk-label govuk-radios__label" for="II_2_2_1b">
+
+                              <!-- CROSSED OUT -->
+                              <div id="ii_2_2_1b_crossed">
+                                <S>
+                                approved <a href="#note-4">(Note 4)</a>    
+                                </S>
+                              </div><!-- end crossed -->
+                    
+                              <!-- NOT CROSSED OUT -->
+                              <div id="ii_2_2_1b_notcrossed">
+                                approved <a href="#note-4">(Note 4)</a> 
+                              </div><!-- end not crossed -->
+
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <p>by, and under the control of, the competent authority of the third country or territory of origin and which has a system in place to maintain and to keep for at least three years, up-to-date records containing information regarding:</p>
+
+                    <p>(a) the species, categories and number of aquaculture animals on the establishment;<br>
+                      (b) movements of aquatic animals into, and aquaculture animals out of, the establishment;<br>
+                      (c) mortality in the establishment;</p>
+
+                    <!------ II.2.2.2 ------>
+
+                    <p>II.2.2.2</p>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="II_2_2_2" name="II_2_2_2" type="checkbox" onchange="showHideElementii2('II_2_2_2', 'ii_2_2_2_crossed', 'ii_2_2_2_notcrossed')">
+                        <label class="govuk-label govuk-checkboxes__label" for="II_2_2_2">
+
+                          <!-- CROSSED OUT -->
+                          <div id="ii_2_2_2_crossed">
+                            <S>
+                              They come from an aquaculture establishment which receives regular animal health visits from a veterinarian for the purpose of the detection of, and information on, signs indicative of the occurrence of diseases, including the listed diseases referred to in Annex I to Delegated Regulation (EU) 2020/692 relevant for the species and emerging diseases, at a frequency that is proportionate to the risk posed by the establishment.</a>
+                            </S>
+                          </div><!-- end crossed -->
+                
+                          <!-- NOT CROSSED OUT -->
+                          <div id="ii_2_2_2_notcrossed">
+                            They come from an aquaculture establishment which receives regular animal health visits from a veterinarian for the purpose of the detection of, and information on, signs indicative of the occurrence of diseases, including the listed diseases referred to in Annex I to Delegated Regulation (EU) 2020/692 relevant for the species and emerging diseases, at a frequency that is proportionate to the risk posed by the establishment.</a>
+                          </div><!-- end not crossed -->
+
+                        </label>
+                    </div>
+
+                  </div><!-- end subsection 2 -->
+            </div><!-- end subsection 1-->
+          
+          <!----- END II.2.2 ---->
+
+          <!---------------------- END ATTESTATIONS ------------------------>
+
+          <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+          <!----------------------- FOOTNOTES ------------------------->
+
+          <h3 class="govuk-heading-s">Notes</h3>
+
+          <!-- footnote 1 -->
+          <details id="note-1" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (1)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Part II.1. of this animal health/official certificate does not apply to countries with special public health certification requirements laid down in equivalence agreements or other Union legislation.
+            </div>
+          </details>
+
+          <!-- footnote 2 -->
+          <details id="note-2" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (2)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Part II.2. of this animal health/official certificate shall not apply and shall be deleted when the consignment consists of: (a) species other than those listed in the Annex to Commission Implementing Regulation (EU) 2018/1882; or (b) wild aquatic animals and products of animal origin from those aquatic animals which are landed from fishing vessels for direct human consumption; or (c) products of animal origin from aquatic animals, other than live aquatic animals, which are ready for direct human consumption without undergoing further processing in the Union.
+            </div>
+          </details>
+
+          <!-- footnote 3 -->
+          <details id="note-3" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (3)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Species listed in columns 3 and 4 in the table of the Annex to Implementing Regulation (EU) 2018/1882. Species listed in column 4 shall only be regarded as vectors under the conditions set out in Article 171 of Delegated Regulation (EU) 2020/692.
+            </div>
+          </details>
+
+          <!-- footnote 4 -->
+          <details id="note-4" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (4)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Keep if appropriate/delete if not applicable. In the case of Part II.2.4.1., deletion is not permitted if the consignment contains listed species for Epizootic haematopoietic necrosis, infection with Taura syndrome virus or infection with yellow head virus, other than in the circumstances referred to in note (6).
+            </div>
+          </details>
+
+          <!-- footnote 6 -->
+          <details id="note-6" class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Note (6)
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Parts II.2.3.1., II.2.3.2. and Part II.2.4. of this animal health/official certificate do not apply and shall be deleted if the consignment contains only the following crustaceans or fish:
+              <br><br>
+              (a) crustaceans which are packaged and labelled for human consumption in accordance with the specific requirements for those animals set out Regulation (EC) No 853/2004 and which are no longer able to survive as living animals if returned to the aquatic environment,
+              <br><br>
+              (b) crustaceans which are intended for human consumption without further processing, provided that they are packaged for retail sale in compliance with the requirements for such packages set out in Regulation (EC) No 853/2004,
+              <br><br>
+              (c) crustaceans which are packaged and labelled for human consumption in compliance with the specific requirements for those animals set out in Regulation (EC) No 853/2004 and which are intended for further processing without temporary storage at the place of processing,
+              <br><br>
+              (d) fish which are slaughtered and eviscerated before dispatch to the Union.
+            </div>
+          </details>
+
+          <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+          <!-- Back to top link -->
+          <div id="top-link"><p><a href="#screen-top">Back to top</a></p></div>
+
+        </div>
+          
+        <!--------------------- END FOOTNOTES ---------------------------->
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-8"></div>
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8361-p2-2-animal.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </a>
+
+        <!-- DISABLED FOR NOW
+        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Save as draft
+        </button> 
+        -->
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+    <div class="govuk-grid-column-one-third">
+
+
+        <!------------------------- ASIDE << disabled ------------------------------->
+        <!-- 
+          <div class="app-step-nav-related aside-container">
+  
+            <h2 class="app-step-nav-related__heading">
+              <span class="govuk-heading-s app-step-nav-related__pretitle">Additional links</span>
+            </h2>
+  
+              <span class="app-step-nav-related__pretitle"></span>
+                <p class="govuk-body"><a href="template-from-export-name.html" class="govuk-link">Notes for guidance for EHC 8361</a></p>  
+            
+          </div>
+          -->
+        
+        <!----------------------- END ASIDE ------------------------------>
+
+    </div><!-- end one third -->
+
+</div> <!-- end grid row -->
+
+
+ 
+{% endblock %}

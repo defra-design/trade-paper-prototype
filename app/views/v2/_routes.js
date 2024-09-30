@@ -3,7 +3,7 @@ const govukPrototypeKit = require('govuk-prototype-kit')
 
 const { red } = require('ansi-colors');
 const router = govukPrototypeKit.requests.setupRouter()
-var version = "v1";
+var version = "v2";
 
 
 router.get('*', function(req, res, next){

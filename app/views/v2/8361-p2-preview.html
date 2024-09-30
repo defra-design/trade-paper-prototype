@@ -1,0 +1,46 @@
+{% extends "layouts/main-back.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    
+        <!------------------ CHECK -------------------------->
+
+        <h1 class="govuk-heading-l">
+          Check the certificate
+        </h1>
+
+        <p><a href="">Preview these answers in a specimen certificate (PDF opens in a new tab)</a></p>
+        
+        <!---------------------- END RADIOS ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8361-p2-certify.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Continue to certify
+        </button>
+        </a>
+
+        <p><a href="">I need to make changes to the certificate</a></p>
+
+      <!-- DISABLED FOR NOW
+        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Save as draft
+        </button>
+      -->
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}

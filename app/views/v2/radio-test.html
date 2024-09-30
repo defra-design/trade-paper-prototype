@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>How To Show and Hide Div on CheckBox Check or Uncheck Using JQuery or Javascript?</title>
+    </head>
+    <body>
+        <label>
+            Do you have Email ID?
+            <input type="radio" id="radio_Email_yes" value="yes" name="radio" onclick="javascript:myFunction();" />
+            Yes &nbsp;
+            <input type="radio" id="radio_Email_no" value="no" name="radio" onclick="javascript:myFunction();" />
+            No
+        </label>
+        <hr />
+        <div id="div_email" style="display: none;">
+            Enter Email ID:
+            <input type="text" id="txtEmail" />
+        </div>
+
+        <script>
+            function myFunction() {
+                var yes = document.getElementById("radio_Email_yes");
+                var div_email = document.getElementById("div_email");
+                if (yes.checked === true) {
+                    div_email.style.display = "block";
+                } else {
+                    div_email.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
