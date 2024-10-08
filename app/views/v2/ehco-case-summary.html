@@ -1,0 +1,136 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Manage case 24/1140" %}
+
+{% block beforeContent %}
+    
+<!-- PHASE BANNER -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is not a live service.
+      </span>
+    </p>
+  </div>
+<!-- END PHASE -->
+
+<!-- BACK LINK -->
+<a href="ehco-cases.html" class="govuk-back-link">Back</a>
+<!-- END BACK -->
+ 
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">Manage case 24/1140</h1> 
+
+        <p>1 certificate</b></p>
+
+        <!---- SUMARY LIST ---->
+
+        <dl class="govuk-summary-list govuk-summary-list--no-border">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Export health certificate 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              8361EHC: Live fish, live crustaceans and products of animal origin<br> from those animals
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Exporter 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Linda Slater 
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Destination 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              France
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Proposed export date 
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">19 Oct 2024</p>
+            </dd>
+          </div>
+        </dl>
+
+        <!---- END SUMARY ---->
+
+        <!---- TABS ---->
+
+        <div class="govuk-tabs" data-module="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#certificate">
+                Export health certificate
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#attachments">
+                Attachments (0)
+              </a>
+            </li>
+          </ul>
+
+          <div class="govuk-tabs__panel" id="certificate">
+            <h2 class="govuk-heading-l">1 certificate</h2>
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Certificate</th>
+                  <th scope="col" class="govuk-table__header">Actual export date</th>
+                  <th scope="col" class="govuk-table__header">Certificate status</th>
+                  <th scope="col" class="govuk-table__header">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell">24/2/004614</td>
+                  <td class="govuk-table__cell">19 Oct 2024</td>
+                  <td class="govuk-table__cell">DISPATCHED</td>
+                  <td class="govuk-table__cell"> 	
+                    <a href="ehco-review-answers.html"><b>Review certificate</b></a><br>
+                    <a href="">View certificate 24/2/004614 PDF (opens in a new window or tab)</a><br>
+                    <a href="">Editable certificate 24/2/004614 PDF (opens in a new window or tab)</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="attachments">
+            <h2 class="govuk-heading-l">Attachments</h2>
+            <p>The exporter has not added any attachments to this application.</p>
+
+            <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+            <a href="">Add attachments</a>
+          </div>
+          
+        </div>
+
+        <!---- END TABS ---->
+
+    
+    </div> <!-- end two thirds -->
+</div> <!-- end grid row -->
+ 
+{% endblock %}
