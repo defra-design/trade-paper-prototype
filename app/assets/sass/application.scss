@@ -52,6 +52,23 @@
   display:none;
 }
 
+
+// All of part 2 crossed
+#part_ii_2_crossed
+{
+    display:none;
+}
+
+.crossedOut
+{
+    text-decoration: line-through;
+}
+.notCrossed
+{
+    text-decoration: none;
+}
+
+
 // Section 2 attestations crossed out (Health info)
 #ii_2_crossed, #ii_2_1a_crossed, #ii_2_1b_crossed, #ii_2_1_1a_crossed, #ii_2_1_1b_crossed, #ii_2_1_2a_crossed, #ii_2_1_2b_crossed, #ii_2_2a_crossed, #ii_2_2b_crossed, #ii_2_2_1a_crossed, #ii_2_2_1b_crossed, #ii_2_2_2_crossed
 {
@@ -63,4 +80,7 @@
 {
   display:none;
 }
+
+
+  
 
