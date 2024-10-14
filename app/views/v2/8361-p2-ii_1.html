@@ -30,6 +30,17 @@
 
 <script>
 
+//----------- TOOLTIP ---------------------
+
+function hide() {
+  document.getElementById("tooltip").classList.remove("block");
+}
+function show() {
+document.getElementById("part_ii_2_notcrossed").classList.remove("crossedOut");
+  document.getElementById("tooltip").classList.add("block");
+  
+}
+
 // For turning the attestation strike throughs off and on
 //
 
@@ -256,6 +267,16 @@
       element2.style.display = "block"; // Show the element 
     } }
 
+
+  //----------- TOOLTIP
+
+    function hide() {
+      document.getElementById("tooltip").classList.remove("block");
+    }
+    function show() {
+      document.getElementById("tooltip").classList.add("block");
+    }
+
   </script>
 
 
@@ -281,6 +302,7 @@
         
           <!------ II.1 ------>
             <p>II.1</p>
+            
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="II_1" name="II_1" type="checkbox" onchange="showHideElementii1('II_1', 'ii_1_crossed', 'ii_1_notcrossed', 'ii_1a_crossed', 'ii_1a_notcrossed', 'ii_1b_crossed', 'ii_1b_notcrossed', 'ii_1c_crossed', 'ii_1c_notcrossed', 'ii_1d_crossed', 'ii_1d_notcrossed', 'ii_1e_crossed', 'ii_1e_notcrossed', 'ii_1f_crossed', 'ii_1f_notcrossed', 'ii_1g_crossed', 'ii_1g_notcrossed', 'ii_1h_crossed', 'ii_1h_notcrossed', 'ii_1i_crossed', 'ii_1i_notcrossed', 'ii_1j_crossed', 'ii_1j_notcrossed')">
               <label class="govuk-label govuk-checkboxes__label" for="II_1">
@@ -289,17 +311,29 @@
 
                   <!-- CROSSED OUT -->
                   <S>
-                  <b>Public health attestation</b><br>Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals <a href="#note-1">(Note 1)</a> 
+                  <b>Public health attestation</b><br>Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals (note 1)
+        
+                  <!--<a href="#note-1">(note 1)</a> -->
                   <br><br>
                   I, the undersigned, declare that I am aware of the relevant requirements of <a href="https://www.legislation.gov.uk/eur/2002/178/contents" target="_blank" >Regulation (EC) No 178/2002 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="https://www.legislation.gov.uk/eur/2004/852/contents" target="_blank" >Regulation (EC) No 852/2004 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="">Regulation (EC) No 853/2004 (opens in a new tab)</a> of the European Parliament and of the Council and <a href="">Regulation (EU) 2017/625 (opens in a new tab)</a> of the European Parliament and of the Council and hereby certify that the fishery products described in Part I were produced in accordance with these requirements, in particular that they:
                   </S>
               </div><!-- end crossed -->
   
               <div id="ii_1_notcrossed">
-                
+
                   <!-- NOT CROSSED OUT -->
   
-                  <b>Public health attestation</b><br> Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals <a href="#note-1">(Note 1)</a> 
+                  <b>Public health attestation</b><br> Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals
+                  
+                  <div class="tooltip">
+                    <a href="" onmousedown="show()" class="tooltip">(note 1)</a>
+                    <div id="tooltip" onmouseup="hide()" class="tooltiptext">
+                      <span></span><b>Note 1</b><br><br>Part II.1. of this animal health/official certificate does not apply to countries with special public health certification requirements laid down in equivalence agreements or other Union legislation.<br><br></span>
+                    </div>
+                  </div>
+
+                  <!--<a href="#note-1">(note 1)</a>-->
+
                   <br><br>
                   I, the undersigned, declare that I am aware of the relevant requirements of <a href="https://www.legislation.gov.uk/eur/2002/178/contents" target="_blank" >Regulation (EC) No 178/2002 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="https://www.legislation.gov.uk/eur/2004/852/contents" target="_blank" >Regulation (EC) No 852/2004 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="">Regulation (EC) No 853/2004 (opens in a new tab)</a> of the European Parliament and of the Council and <a href="">Regulation (EU) 2017/625 (opens in a new tab)</a> of the European Parliament and of the Council and hereby certify that the fishery products described in Part I were produced in accordance with these requirements, in particular that they:
               </div><!-- end not crossed -->
