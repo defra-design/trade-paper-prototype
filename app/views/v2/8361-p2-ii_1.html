@@ -32,14 +32,53 @@
 
 //----------- TOOLTIP ---------------------
 
-function hide() {
-  document.getElementById("tooltip").classList.remove("block");
-}
-function show() {
-document.getElementById("part_ii_2_notcrossed").classList.remove("crossedOut");
-  document.getElementById("tooltip").classList.add("block");
-  
-}
+    //---------- Tooltop by Alex Morris
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let activeTooltip = null; // Keep track of the currently active tooltip
+
+        // Get all tooltip links on the page
+        const tooltipLinks = document.querySelectorAll('.tooltip-link');
+
+        tooltipLinks.forEach(function (link) {
+            // Add click event listener to each tooltip link
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behaviour
+
+                // Find the tooltip text associated with the clicked link
+                const tooltipText = this.nextElementSibling;
+
+                // If another tooltip is already open, close it
+                if (activeTooltip && activeTooltip !== tooltipText) {
+                    activeTooltip.style.display = 'none';
+                }
+
+                // Toggle the current tooltip's visibility
+                if (tooltipText.style.display === 'block') {
+                    tooltipText.style.display = 'none';
+                    activeTooltip = null; // No active tooltip anymore
+                } else {
+                    tooltipText.style.display = 'block';
+                    activeTooltip = tooltipText; // Set this as the active tooltip
+                }
+            });
+        });
+
+        // Close the tooltip if clicking anywhere outside of the tooltip and its link
+        document.addEventListener('click', function (event) {
+            if (activeTooltip) {
+                // Check if the click was outside the active tooltip and its link
+                const isClickInsideTooltip = activeTooltip.contains(event.target);
+                const isClickInsideLink = Array.from(tooltipLinks).some(link => link.contains(event.target));
+
+                if (!isClickInsideTooltip && !isClickInsideLink) {
+                    activeTooltip.style.display = 'none'; // Hide the active tooltip
+                    activeTooltip = null; // No active tooltip anymore
+                }
+            }
+        });
+    });
+
 
 // For turning the attestation strike throughs off and on
 //
@@ -268,15 +307,6 @@ document.getElementById("part_ii_2_notcrossed").classList.remove("crossedOut");
     } }
 
 
-  //----------- TOOLTIP
-
-    function hide() {
-      document.getElementById("tooltip").classList.remove("block");
-    }
-    function show() {
-      document.getElementById("tooltip").classList.add("block");
-    }
-
   </script>
 
 
@@ -313,7 +343,6 @@ document.getElementById("part_ii_2_notcrossed").classList.remove("crossedOut");
                   <S>
                   <b>Public health attestation</b><br>Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals (note 1)
         
-                  <!--<a href="#note-1">(note 1)</a> -->
                   <br><br>
                   I, the undersigned, declare that I am aware of the relevant requirements of <a href="https://www.legislation.gov.uk/eur/2002/178/contents" target="_blank" >Regulation (EC) No 178/2002 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="https://www.legislation.gov.uk/eur/2004/852/contents" target="_blank" >Regulation (EC) No 852/2004 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="">Regulation (EC) No 853/2004 (opens in a new tab)</a> of the European Parliament and of the Council and <a href="">Regulation (EU) 2017/625 (opens in a new tab)</a> of the European Parliament and of the Council and hereby certify that the fishery products described in Part I were produced in accordance with these requirements, in particular that they:
                   </S>
@@ -324,15 +353,13 @@ document.getElementById("part_ii_2_notcrossed").classList.remove("crossedOut");
                   <!-- NOT CROSSED OUT -->
   
                   <b>Public health attestation</b><br> Deleted when the Union is not the final destination of the live fish, live crustaceans or products of animal origin from those animals
-                  
+
                   <div class="tooltip">
-                    <a href="" onmousedown="show()" class="tooltip">(note 1)</a>
-                    <div id="tooltip" onmouseup="hide()" class="tooltiptext">
+                    <a href="" class="tooltip tooltip-link">(note 1)</a>
+                    <div id="tooltip" class="tooltiptext">
                       <span></span><b>Note 1</b><br><br>Part II.1. of this animal health/official certificate does not apply to countries with special public health certification requirements laid down in equivalence agreements or other Union legislation.<br><br></span>
                     </div>
                   </div>
-
-                  <!--<a href="#note-1">(note 1)</a>-->
 
                   <br><br>
                   I, the undersigned, declare that I am aware of the relevant requirements of <a href="https://www.legislation.gov.uk/eur/2002/178/contents" target="_blank" >Regulation (EC) No 178/2002 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="https://www.legislation.gov.uk/eur/2004/852/contents" target="_blank" >Regulation (EC) No 852/2004 (opens in a new tab)</a> of the European Parliament and of the Council, <a href="">Regulation (EC) No 853/2004 (opens in a new tab)</a> of the European Parliament and of the Council and <a href="">Regulation (EU) 2017/625 (opens in a new tab)</a> of the European Parliament and of the Council and hereby certify that the fishery products described in Part I were produced in accordance with these requirements, in particular that they:
