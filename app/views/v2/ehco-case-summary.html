@@ -64,7 +64,14 @@
               Proposed export date 
             </dt>
             <dd class="govuk-summary-list__value">
-              <p class="govuk-body">11 Oct 2024</p>
+              <p class="govuk-body">
+                <script>
+                  const ExportDate = new Date();
+                  const ExportOptions = { year: 'numeric', month: 'short'};
+                </script>
+
+                <script type="text/javascript"> document.write(ExportDate.getDate());</script> 	
+                <script type="text/javascript"> document.write(ExportDate.toLocaleDateString(undefined, ExportOptions));</script></p>
             </dd>
           </div>
         </dl>
@@ -104,12 +111,12 @@
               <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                   <td class="govuk-table__cell">24/2/004614</td>
-                  <td class="govuk-table__cell">11 Oct 2024</td>
+                  <td class="govuk-table__cell"> </td>
                   <td class="govuk-table__cell">Ready to certify</td>
                   <td class="govuk-table__cell"> 	
                     <a href="ehco-case-answers.html"><b>Review certificate</b></a><br>
-                    <a href="">View certificate 24/2/004614 PDF (opens in a new window or tab)</a><br>
-                    <a href="">Editable certificate 24/2/004614 PDF (opens in a new window or tab)</a>
+                    <a href="/public/pdf/8361_Brixham_EN_nostrike.pdf" target="_blank">View certificate 24/2/004614 PDF (opens in a new window or tab)</a><br>
+                    <a href="/public/pdf/8361_Brixham_EN_nostrike.pdf" target="_blank">Editable certificate 24/2/004614 PDF (opens in a new window or tab)</a>
                 </td>
                 </tr>
               </tbody>

@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    
+        <!------------------ PANEL -------------------------->
+
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+                Part 2 completed
+            </h1>
+          </div>
+
+        <!------------------ END PANEL -------------------------->
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+        <!------------------ CONTENT -------------------------->
+
+
+        <p class="govuk-body">You now need to:
+            <ul class="govuk-body">
+                <li>print the export health certificate (EHC)</li>
+                <li>stamp it once where shown</li>
+                <li>sign it</li>
+                <li>give it to the exporter</li>
+            </ul>
+        </p>
+            
+        <p><a href="/public/pdf/8361_Brixham_EN_FR_struck.pdf">Download completed certificate (PDF)</a>
+            
+
+        <!---------------------- END CONTENT ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="">
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+            Print the EHC
+            </button>
+        </a>
+        <br>
+        <a href="ehco-cases.html" class="govuk-link">Return to my EHCO cases</a>
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}
