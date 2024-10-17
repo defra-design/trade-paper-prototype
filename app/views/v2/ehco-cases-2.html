@@ -1,0 +1,135 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Your cases" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-l">Your cases</h1> 
+
+        <!---- SEARCH ---->
+
+        <div class="moj-search">
+
+            <form action="#" method="post">
+          
+              <div class="govuk-form-group">
+          
+                <div id="search-hint" class="govuk-hint moj-search__hint ">
+                  Search by certificate ID, case ID, name, destination or reference number
+                </div>
+                <input class="govuk-input govuk-!-width-one-half" id="search" name="search" type="search" aria-describedby="search-hint">
+
+                <button type="submit" class="govuk-button moj-search__button " data-module="govuk-button">
+                  Search
+                </button>
+
+                <button type="submit" class="govuk-button govuk-button--secondary " data-module="govuk-button">
+                  Show filters +
+                </button>
+
+              </div>
+
+              <p>Showing 5 cases</p>
+          
+            </form>
+          </div>
+          
+        <!---- END SEARCH ---->
+
+        
+        <!-- <p><a href="">Clear filter</a> -->
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+        <!---- TABLE ---->
+
+        <table class="govuk-table" data-module="moj-sortable-table">
+
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" aria-sort="ascending">Case ID</th>
+                <th scope="col" class="govuk-table__header" >Organisation name</th>
+                <th scope="col" class="govuk-table__header" >Export date</th>
+                <th scope="col" class="govuk-table__header" >Destination</th>
+                <th scope="col" class="govuk-table__header" >Status</th>
+                <th scope="col" class="govuk-table__header" >Reference</th>
+                <th scope="col" class="govuk-table__header" >Action</th>
+              </tr>
+            </thead>
+      
+            <tbody class="govuk-table__body">
+      
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell" data-sort-value="16">24/1140</td>
+            <td class="govuk-table__cell">Brixham Fish Merchants</td>
+            <td class="govuk-table__cell">
+              <script>
+                const ExportDate = new Date();
+                const ExportOptions = { year: 'numeric', month: 'short'};
+              </script>
+
+<script type="text/javascript"> document.write(ExportDate.getDate());</script> 	
+<script type="text/javascript"> document.write(ExportDate.toLocaleDateString(undefined, ExportOptions));</script>
+               </td>
+            <td class="govuk-table__cell">France</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Certified</strong></td>
+            <td class="govuk-table__cell">45/RFK/96</td>
+            <td class="govuk-table__cell"><a href="ehco-case-summary.html">Summary</a> <!--- <<<<<< ACTIVE LINK -->
+      
+            </tr>
+      
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell" data-sort-value="15">24/524</td>
+            <td class="govuk-table__cell">Fresh Trading Ltd</td>
+            <td class="govuk-table__cell">07 Oct 2024</td>
+            <td class="govuk-table__cell">Repulic of Ireland</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Dispatched</strong></td>
+            <td class="govuk-table__cell">10.24.3 BNG-ROI</td>
+            <td class="govuk-table__cell"><a href="ehco-case-summary.html">Summary</a>
+      
+            </tr>
+      
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell" data-sort-value="14">24/381</td>
+            <td class="govuk-table__cell">DMD</td>
+            <td class="govuk-table__cell">03 Oct 2024</td>
+            <td class="govuk-table__cell">Spain</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Dispatched</strong></td>
+            <td class="govuk-table__cell">63FsLK (Sam)</td>
+            <td class="govuk-table__cell"><a href="ehco-case-summary.html">Summary</a>
+      
+            </tr>
+
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell" data-sort-value="13">24/585</td>
+            <td class="govuk-table__cell">Fresh Trading Ltd</td>
+            <td class="govuk-table__cell">26 Sept 2024</td>
+            <td class="govuk-table__cell">France</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Dispatched</strong></td>
+            <td class="govuk-table__cell">10.24.2 BNG-ROI</td>
+            <td class="govuk-table__cell"><a href="ehco-case-summary.html">Summary</a>
+
+            </tr>
+
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell" data-sort-value="12">24/593</td>
+            <td class="govuk-table__cell">Harlow Foods</td>
+            <td class="govuk-table__cell">16 Sept 2024</td>
+            <td class="govuk-table__cell">France</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Dispatched</strong></td>
+            <td class="govuk-table__cell">103857-238</td>
+            <td class="govuk-table__cell"><a href="ehco-case-summary.html">Summary</a>
+      
+            </tbody>
+          </table>
+
+        <!---- END TABLE ---->
+
+    
+    </div> <!-- end two thirds -->
+</div> <!-- end grid row -->
+ 
+{% endblock %}
