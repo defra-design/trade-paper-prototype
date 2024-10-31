@@ -1,0 +1,50 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    
+        <!------------------ PANEL -------------------------->
+
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+              Certified
+            </h1>
+          </div>
+
+        <!------------------ END PANEL -------------------------->
+
+
+        <!------------------ CONTENT -------------------------->
+
+
+        <p>The completed export health certificate has been sent to <b>Brixham Fish Merchants</b></p>
+            
+        <p><a href="/public/pdf/8361_Brixham_EN_FR_certified.pdf">Download completed certificate (PDF)</a>
+            
+
+        <!---------------------- END CONTENT ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="ehco-cases-2.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Return to my EHCO cases
+        </button>
+      </a>
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}

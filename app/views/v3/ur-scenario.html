@@ -1,0 +1,94 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Manage case 24/1140" %}
+
+{% block beforeContent %}
+    
+<!-- PHASE BANNER -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is not a live service.
+      </span>
+    </p>
+  </div>
+<!-- END PHASE -->
+
+<!-- BACK LINK -->
+<!--<a href="ehco-cases.html" class="govuk-back-link">Back</a>-->
+<!-- END BACK -->
+ 
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">Scenario</h1> 
+    <p>Choose a scenario that best matches your current experience with <b>EHC 8468</b> (Dairy products intended for human consumption that are required to undergo a pasteurisation treatment to the European Union and Northern Ireland)</p>
+
+    <!-- SPACING --><div class="govuk-!-padding-bottom-6"></div>
+
+    <!------ ACCORDION -------->
+
+    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                I'm familiar with EHC 8468
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+            <p>You have just received an email notification from an exporter requesting for a consignment to be certified, for EHC 8468.</p>
+            <p>Use any resources you'd normally rely on to complete the process.</p>
+
+                <!------------------------- BUTTON --------------------------------->
+                <a href="ehco-cases.html">
+                    <button type="submit" class="govuk-button" data-module="govuk-button">
+                    Continue
+                    </button>
+                </a>
+                <!----------------------- END BUTTON ---------------------------->
+          </div>
+        </div>
+
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                I'm using EHC 8468 for the first time
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content">
+            <p>You have been working with an exporter recently, who's preparing to export for the first time using EHC 8468 (Dairy products). You've had discussions about the products, where they are going, and the timings.</p>
+            <p>You have just received an email notification from an exporter requesting for the consignment to be certified.</p>
+            <p>Use any resources you'd normally rely on to complete the process.</p>
+
+                <!------------------------- BUTTON --------------------------------->
+                <a href="ehco-cases.html">
+                    <button type="submit" class="govuk-button" data-module="govuk-button">
+                    Continue
+                    </button>
+                </a>
+                <!----------------------- END BUTTON ---------------------------->
+          </div>
+        </div>
+
+    </div><!-------- ACCORDION END -------->
+
+    
+
+        
+    
+    </div> <!-- end two thirds -->
+</div> <!-- end grid row -->
+ 
+{% endblock %}

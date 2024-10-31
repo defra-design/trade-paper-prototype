@@ -1,0 +1,274 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="8468 - Part 2" %}
+
+{% block beforeContent %}
+    
+<!-- PHASE BANNER -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is not a live service.
+      </span>
+    </p>
+  </div>
+<!-- END PHASE -->
+
+<!-- BACK LINK -->
+<a href="ehco-cases.html" class="govuk-back-link">Back</a>
+<!-- END BACK -->
+ 
+{% endblock %}
+
+
+{% block content %}
+
+<!------------------ JAVASCRIPT -------------------------->
+
+<script>
+
+//------------- CROSS OUT PII.1 ----------------------
+
+    // new version with event listener included by Alex
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_1_");
+        var targetDiv = document.getElementById("part_ii_1_notcrossed");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+
+//------------- CROSS OUT PII.1.a ----------------------
+
+    // new version with event listener included by Alex
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_1_a");
+        var targetDiv = document.getElementById("part_ii_1_a_notcrossed");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+
+
+//----------- TOOLTIP ---------------------
+
+    //---------- Tooltop by Alex Morris
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let activeTooltip = null; // Keep track of the currently active tooltip
+
+        // Get all tooltip links on the page
+        const tooltipLinks = document.querySelectorAll('.tooltip-link');
+
+        tooltipLinks.forEach(function (link) {
+            // Add click event listener to each tooltip link
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behaviour
+
+                // Find the tooltip text associated with the clicked link
+                const tooltipText = this.nextElementSibling;
+
+                // If another tooltip is already open, close it
+                if (activeTooltip && activeTooltip !== tooltipText) {
+                    activeTooltip.style.display = 'none';
+                }
+
+                // Toggle the current tooltip's visibility
+                if (tooltipText.style.display === 'block') {
+                    tooltipText.style.display = 'none';
+                    activeTooltip = null; // No active tooltip anymore
+                } else {
+                    tooltipText.style.display = 'block';
+                    activeTooltip = tooltipText; // Set this as the active tooltip
+                }
+            });
+        });
+
+        // Close the tooltip if clicking anywhere outside of the tooltip and its link
+        document.addEventListener('click', function (event) {
+            if (activeTooltip) {
+                // Check if the click was outside the active tooltip and its link
+                const isClickInsideTooltip = activeTooltip.contains(event.target);
+                const isClickInsideLink = Array.from(tooltipLinks).some(link => link.contains(event.target));
+
+                if (!isClickInsideTooltip && !isClickInsideLink) {
+                    activeTooltip.style.display = 'none'; // Hide the active tooltip
+                    activeTooltip = null; // No active tooltip anymore
+                }
+            }
+        });
+    });
+
+
+  </script>
+
+
+<!----------------------------------- END JAVASCRIPT ---------------------------------------->
+
+
+<div id="screen-top" class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+
+    <span class="govuk-caption-l">EHC 8468</span>
+    <h1 class="govuk-heading-l">Part 2 - Certify the consignment</h1>
+
+    <div class="govuk-inset-text">
+      Read the <a href="https://www.gov.uk/export-health-certificates/live-fish-crustaceans-and-products-from-these-animals-intended-for-human-consumption-to-the-european-union-and-northern-ireland-certificate-8361#check-what-you-need-for-your-export" target="_blank">notes for guidance for EHC 8468 (opens in a new tab)</a>.
+    </div>
+
+    <h3 class="govuk-heading-m">II. Health information</h3>
+
+    
+        <!------------------ ATTESTATIONS -------------------------->
+
+        
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+        
+          <!------ II.1 ------>
+            <p><b>II.1</b></p>
+            
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="II_1_" name="II_1_" type="checkbox" value="selected">
+              <label class="govuk-label govuk-checkboxes__label" for="II_1_">
+  
+              <div id="ii_1_notcrossed">
+
+                  <!-- NOT CROSSED OUT -->
+  
+                  <b>Public health attestation</b><br> [Delete when the Union is not the final destination of the dairy products]
+
+                  <br><br>
+                  I, the undersigned, declare that I am aware of the relevant requirements of Regulation (EC) No 178/2002 of the European Parliament and of the Council, Regulation (EC) No 852/2004</a> of the European Parliament and of the Council, Regulation (EC) No 853/2004 of the European Parliament and of the Council and Regulation (EU) 2017/625 of the European Parliament and of the Council and Commission Implementing Regulation (EU) 2019/627 and hereby certify that the dairy product described in Part I was produced in accordance with these requirements, and in particular that:
+              </div><!-- end not crossed -->
+
+              </label>
+            </div>
+
+            
+
+          <!---- Sub Section 1 ---->
+          <div class="part2-subsection-1">
+
+              <p><b>(a)</b>  it was produced from raw milk:</p>
+
+                <div class="part2-subsection-2">
+
+                  <p><b>(i)</b> which comes from holdings registered in accordance with Regulation (EC) No 852/2004 and checked in accordance with Articles 49 and 50 of Implementing Regulation (EU) 2019/627;</p>
+
+                  <p><b>(ii)</b> which was produced, collected, cooled, stored and transported in accordance with the hygiene conditions laid down in Section IX, Chapter I, of Annex III to Regulation (EC) No 853/2004;</p>
+
+                  <p><b>(iii)</b> which meets the plate and somatic cell count criteria laid down in Section IX, Chapter I, of Annex III to Regulation (EC) No 853/2004;</p>
+
+                  <p><b>(iv)</b> which complies with the guarantees covering live animals and products thereof provided by the control plan submitted in accordance with Article 6(2) of Commission Delegated Regulation (EU) 2022/2292 and the third country or region thereof of its origin is listed in Annex -I to Commission Implementing Regulation (EU) 2021/405 with an entry ‘X’ for milk;</p>
+
+                  <p><b>(v)</b> which, pursuant to testing for antibiotic residues carried out by the food business operator in accordance with the requirements Section IX, Chapter I, Part III, point 4, of Annex III to Regulation (EC) No 853/2004, complies with the maximum residue limits for residues of antibacterial veterinary medicinal products laid down in the Annex to Commission Regulation (EU) No 37/2010;</p>
+
+                  <p><b>(vi)</b> has not been obtained from animals showing a positive reaction to the test for tuberculosis or brucellosis;</p>
+                    
+                </div><!-- end subsection 2 -->
+
+            <p><b>(b)</b>  it comes from (an) establishment(s) applying general hygiene requirements and implementing a programme based on the hazard analysis and critical control points (HACCP) principles in accordance with Article 5 of Regulation (EC) No 852/2004, regularly audited by the competent authorities, and is listed as a Union approved establishment;</p>
+
+            <p><b>(c)</b>  it has been processed, stored, wrapped, packaged and transported in accordance with the relevant hygiene conditions laid down in Annex II to Regulation (EC) No 852/2004 and Section IX, Chapter II, of Annex III to Regulation (EC) No 853/2004;</p>
+
+            <p><b>(d)</b>  it meets the relevant criteria laid down in Section IX, Chapter II, of Annex III to Regulation (EC) No 853/2004 and the relevant microbiological criteria laid down in Commission Regulation (EC) No 2073/2005;</p>
+
+            <p><b>(e)</b>  it has undergone or been produced from raw milk which has been submitted to a treatment involving a single heat treatment with a heating effect at least equivalent to that achieved by a pasteurisation process of at least 72°C for 15 seconds and, where applicable, sufficient to ensure a negative reaction to an alkaline phosphatase test immediately after the heat treatment.</p>
+
+          <!-- SPACING --> 
+          <div class="govuk-!-padding-bottom-4"></div>
+
+          <!--------------- II.1.a ----------------->
+
+          <div id="part_ii_1_a_notcrossed" class="notCrossed"><!----- P2.1.a CROSSED OUT CONTAINER -->
+
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+    
+                <!------ II.1.a checkbox ------>
+
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="II_1_a" name="II_1_a" type="checkbox" value="selected">
+                    <label class="govuk-label govuk-checkboxes__label" for="II_1_a">
+                        <b>II.1.a Attestation as regards Commission Delegated Regulation (EU) 2023/905</b>
+
+                        <div class="tooltip">
+                          <a href=""  class="tooltip tooltip-link">(note 1)</a>
+                          <div id="tooltip_1" class="tooltiptext">
+                              <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
+                          </div>
+                        </div>
+
+                        <div class="tooltip">
+                          <a href=""  class="tooltip tooltip-link">(note 4)</a>
+                          <div id="tooltip_4" class="tooltiptext">
+                              <span></span><b>Note 4</b><br>Applicable to consignments entering the Union as from 3 September 2026.<br><br></span>
+                          </div>
+                        </div>
+
+                        <p>[Delete when the Union is not the final destination of the dairy products]</p>
+                    </label>
+                </div>
+            </div>
+          </div>
+
+          <div class="part2-subsection-2">
+
+          <p>I, the undersigned, declare that I am aware of the relevant requirements of Regulation (EU) 2019/6 of the European Parliament and of the Council and Commission Delegated Regulation (EU) 2023/905 and hereby certify that the dairy product described in Part I was produced in accordance with these requirements, and in particular that, the animals from which the raw milk has been obtained have not been administered antimicrobial medicinal products for growth promotion or yield increase or antimicrobial medicinal products containing an antimicrobial that is included in the list of antimicrobials reserved for the treatment of certain infections in humans laid down in Commission Implementing Regulation (EU) 2022/1255 as set out in Article 3 of Delegated Regulation (EU) 2023/905 and originate from a third country or region thereof listed in accordance with Article 5(2) of Delegated Regulation (EU) 2023/905.</p>
+
+          </div><!-- end subsection 2 -->
+
+        </div><!-- end subsection 1 -->
+        
+        
+        <!-- END II.1.a-->
+
+
+        <!------ END II.1 ------>
+
+        <!---------------------- END ATTESTATIONS ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-8"></div>
+
+        <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8468-p2-ii_2.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </a>
+
+        <!-- DISABLED FOR NOW
+        <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Save as draft
+        </button> 
+        -->
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end three quarters -->
+
+</div> <!-- end grid row -->
+
+
+ 
+{% endblock %}

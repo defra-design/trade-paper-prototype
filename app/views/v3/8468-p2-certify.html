@@ -1,0 +1,74 @@
+{% extends "layouts/main-back.html" %}
+
+{% set pageName="8361 - Part 2" %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">EHC 8361</span>
+    <h1 class="govuk-heading-l">Confirm your details before certifying</h1>
+
+    
+      <!------------------ DETAILS -------------------------->
+
+        <!-- Name -->
+        <div id="certify_name">
+          <label class="govuk-body">Signed by</label>
+          <p class="govuk-body-l"><b>A.Veterinarian</b></p>
+        </div>  
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+        <!-- Stamp Number -->
+        <div id="certify_stamp">
+          <label class="govuk-body">Certification stamp number</label>
+          <p class="govuk-body-l"><b>SP123456</b></p>
+        </div>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
+
+
+        <!-- Date of cert -->
+        <div id="certify_date">
+          <label class="govuk-body">Date of certification</label>
+          <p class="govuk-body-l"><b> 11 October 2024</b></p>
+        </div>
+
+      <!---------------------- END DETAILS ------------------------>
+
+        <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+      <!------------------ DECLARATION -------------------------->
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="declaration" name="declaration" type="checkbox" value="selected">
+        <label class="govuk-label govuk-checkboxes__label" for="declaration">
+          <p>I certify this export health certificate</p>
+        </label>
+      </div>
+      
+      <!------------------ END DECLARATION -------------------------->
+
+      <p>The certificate will be signed and stamped electronically and sent to the exporter.</p>
+
+      <!-- SPACING --><div class="govuk-!-padding-bottom-5"></div>
+
+      <!------------------------- BUTTONS --------------------------------->
+
+        <a href="8361-p2-success.html">
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Confirm
+        </button>
+      </a>
+
+
+        <!----------------------- END BUTTONS ---------------------------->
+    
+    </div> <!-- end two thirds -->
+
+</div> <!-- end grid row -->
+ 
+{% endblock %}
