@@ -117,12 +117,12 @@
     });
 
 
-    //------------- CROSS OUT ALL OF PII.2.3.1 ----------------------
+    //------------- CROSS OUT ALL OF II.2.2.1 (either) ----------------------
 
     // new version with event listener included by Alex
     document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_3_1");
-        var targetDiv = document.getElementById("part_ii_2_3_1_notcrossed");
+        var checkbox = document.getElementById("II_2_2_1-raw");
+        var targetDiv = document.getElementById("either_ii_2_2_1_notcrossed");
 
         checkbox.addEventListener("click", function () {
             if (this.checked) {
@@ -135,12 +135,186 @@
         });
     });
 
-    //------------- CROSS OUT ALL OF PII.2.4.1 ----------------------
-
-    // new version with event listener included by Alex
+    //------------- CROSS OUT either II.2.2.1 (zone from animals) ----------------------
     document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_4_1");
-        var targetDiv = document.getElementById("part_ii_2_4_1_notcrossed");
+        var checkbox = document.getElementById("II_2_2_1-1a");
+        var targetDiv = document.getElementById("either_ii_2_2_1_zones");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (Bos taurus) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-1b");
+        var targetDiv = document.getElementById("either_ii_2_2_1_taurus");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (Ovis aries) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-1c");
+        var targetDiv = document.getElementById("either_ii_2_2_1_aries");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (Capra hircus) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-1d");
+        var targetDiv = document.getElementById("either_ii_2_2_1_hircus");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (Bubalus bubalis) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-1e");
+        var targetDiv = document.getElementById("either_ii_2_2_1_bubalis");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (Camelus dromedarius) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-1f");
+        var targetDiv = document.getElementById("either_ii_2_2_1_dromedarius");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (remained zone) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-2a");
+        var targetDiv = document.getElementById("either_ii_2_2_1_remainzone");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (intro zone) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-2b");
+        var targetDiv = document.getElementById("either_ii_2_2_1_introzone");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (third country) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-3a");
+        var targetDiv = document.getElementById("either_ii_2_2_1_thirdcountry");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (member state) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-3b");
+        var targetDiv = document.getElementById("either_ii_2_2_1_memberstate");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (zones) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-3c");
+        var targetDiv = document.getElementById("either_ii_2_2_1_zones");
+
+        checkbox.addEventListener("click", function () {
+            if (this.checked) {
+                targetDiv.classList.add("crossedOut");
+                targetDiv.classList.remove("notCrossed");
+            } else {
+                targetDiv.classList.add("notCrossed");
+                targetDiv.classList.remove("crossedOut");
+            }
+        });
+    });
+
+    //------------- CROSS OUT either II.2.2.1 (member state) ----------------------
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkbox = document.getElementById("II_2_2_1-3d");
+        var targetDiv = document.getElementById("either_ii_2_2_1_memberstate");
 
         checkbox.addEventListener("click", function () {
             if (this.checked) {
@@ -154,12 +328,16 @@
     });
 
 
-    //------------- CROSS OUT ALL OF PII.2.4.2 ----------------------
+
+
+
+
+    //------------- CROSS OUT ALL OF PII.2.2.1 (and or) ----------------------
 
     // new version with event listener included by Alex
     document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_4_2");
-        var targetDiv = document.getElementById("part_ii_2_4_2_notcrossed");
+        var checkbox = document.getElementById("II_2_2_1-dairy");
+        var targetDiv = document.getElementById("andor_ii_2_2_1_notcrossed");
 
         checkbox.addEventListener("click", function () {
             if (this.checked) {
@@ -173,80 +351,7 @@
     });
 
 
-    //------------- CROSS OUT ALL OF PII.2.4.3 ----------------------
-
-    // new version with event listener included by Alex
-    document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_4_3");
-        var targetDiv = document.getElementById("part_ii_2_4_3_notcrossed");
-
-        checkbox.addEventListener("click", function () {
-            if (this.checked) {
-                targetDiv.classList.add("crossedOut");
-                targetDiv.classList.remove("notCrossed");
-            } else {
-                targetDiv.classList.add("notCrossed");
-                targetDiv.classList.remove("crossedOut");
-            }
-        });
-    });
-
-
-
-
-    //------------- CROSS OUT ALL OF PII.2.7.2 ----------------------
-
-    // new version with event listener included by Alex
-    document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_7_2");
-        var targetDiv = document.getElementById("part_ii_2_7_2_notcrossed");
-
-        checkbox.addEventListener("click", function () {
-            if (this.checked) {
-                targetDiv.classList.add("crossedOut");
-                targetDiv.classList.remove("notCrossed");
-            } else {
-                targetDiv.classList.add("notCrossed");
-                targetDiv.classList.remove("crossedOut");
-            }
-        });
-    });
-
-    //------------- CROSS OUT ALL OF PII.2.7.3 ----------------------
-
-    // new version with event listener included by Alex
-    document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_7_3");
-        var targetDiv = document.getElementById("part_ii_2_7_3_notcrossed");
-
-        checkbox.addEventListener("click", function () {
-            if (this.checked) {
-                targetDiv.classList.add("crossedOut");
-                targetDiv.classList.remove("notCrossed");
-            } else {
-                targetDiv.classList.add("notCrossed");
-                targetDiv.classList.remove("crossedOut");
-            }
-        });
-    });
-
-    //------------- CROSS OUT PII.2.8 ----------------------
-
-    // new version with event listener included by Alex
-    document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_2_8");
-        var targetDiv = document.getElementById("part_ii_2_8_notcrossed");
-
-        checkbox.addEventListener("click", function () {
-            if (this.checked) {
-                targetDiv.classList.add("crossedOut");
-                targetDiv.classList.remove("notCrossed");
-            } else {
-                targetDiv.classList.add("notCrossed");
-                targetDiv.classList.remove("crossedOut");
-            }
-        });
-    });
+    
 
 
     //-----------------------------------------------------------
@@ -362,91 +467,82 @@
                                             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
                                               <div class="govuk-checkboxes" data-module="govuk-checkboxes">
 
-                                                <div class="govuk-checkboxes__item">
+                                                <div id="either_ii_2_2_1_zones" class="govuk-checkboxes__item">
                                                   <input class="govuk-checkboxes__input" id="II_2_2_1-1a" name="II_2_2_1-1" type="checkbox" value="zone">
                                                   <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1a">
-                                                    the zone referred to in point II.2.1. and obtained from <b>animals</b> of the species
-
+                                                    the zone referred to in point II.2.1. and obtained from <b>animals</b> of the species either
                                                     <div class="tooltip">
-                                                        either <a href="" class="tooltip tooltip-link">(note 1)</a>
+                                                         <a href="" class="tooltip tooltip-link">(note 1)</a>
                                                         <div id="tooltip_1" class="tooltiptext">
                                                             <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
                                                         </div>
                                                     </div>
-
                                                   </label>
                                                 </div>
-                                                <div class="govuk-checkboxes__item">
+
+
+                                                <div id="either_ii_2_2_1_taurus" class="govuk-checkboxes__item">
                                                   <input class="govuk-checkboxes__input" id="II_2_2_1-1b" name="II_2_2_1-1" type="checkbox" value="taurus">
                                                   <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1b">
-                                                    Bos taurus
-
+                                                    Bos taurus either
                                                     <div class="tooltip">
-                                                        either <a href="" class="tooltip tooltip-link">(note 1)</a>
+                                                         <a href="" class="tooltip tooltip-link">(note 1)</a>
                                                         <div id="tooltip_1" class="tooltiptext">
                                                             <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
                                                         </div>
                                                     </div>
-
                                                   </label>
                                                 </div>
-                                                <div class="govuk-checkboxes__item">
+
+                                                <div id="either_ii_2_2_1_aries" class="govuk-checkboxes__item">
                                                   <input class="govuk-checkboxes__input" id="II_2_2_1-1c" name="II_2_2_1-1" type="checkbox" value="aries">
                                                   <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1c">
-                                                    Ovis aries
-
+                                                    Ovis aries either
                                                     <div class="tooltip">
-                                                        either <a href="" class="tooltip tooltip-link">(note 1)</a>
+                                                         <a href="" class="tooltip tooltip-link">(note 1)</a>
                                                         <div id="tooltip_1" class="tooltiptext">
                                                             <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
                                                         </div>
                                                     </div>
-
                                                   </label>
                                                 </div>
 
-                                                <div class="govuk-checkboxes__item">
-                                                    <input class="govuk-checkboxes__input" id="II_2_2_1-1c" name="II_2_2_1-1" type="checkbox" value="hirus">
-                                                    <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1c">
-                                                        Capra hircus
-  
-                                                        <div class="tooltip">
-                                                            either <a href="" class="tooltip tooltip-link">(note 1)</a>
-                                                            <div id="tooltip_1" class="tooltiptext">
-                                                                <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
-                                                            </div>
-                                                        </div>
-                                                      
-                                                    </label>
-                                                </div>
-
-                                                <div class="govuk-checkboxes__item">
-                                                    <input class="govuk-checkboxes__input" id="II_2_2_1-1d" name="II_2_2_1-1" type="checkbox" value="bubalis">
+                                                <div id="either_ii_2_2_1_hircus" class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="II_2_2_1-1d" name="II_2_2_1-1" type="checkbox" value="hircus">
                                                     <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1d">
-                                                        Bubalus bubalis
-  
+                                                        Capra hircus either
                                                         <div class="tooltip">
-                                                            either <a href="" class="tooltip tooltip-link">(note 1)</a>
+                                                             <a href="" class="tooltip tooltip-link">(note 1)</a>
                                                             <div id="tooltip_1" class="tooltiptext">
                                                                 <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
                                                             </div>
                                                         </div>
-                                                      
                                                     </label>
                                                 </div>
 
-                                                <div class="govuk-checkboxes__item">
-                                                    <input class="govuk-checkboxes__input" id="II_2_2_1-1e" name="II_2_2_1-1" type="checkbox" value="dromedarius">
+                                                <div id="either_ii_2_2_1_bubalis"  class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="II_2_2_1-1e" name="II_2_2_1-1" type="checkbox" value="bubalis">
                                                     <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1e">
-                                                        Camelus dromedarius
-  
+                                                        Bubalus bubalis either
                                                         <div class="tooltip">
-                                                            either <a href="" class="tooltip tooltip-link">(note 1)</a>
+                                                             <a href="" class="tooltip tooltip-link">(note 1)</a>
+                                                            <div id="tooltip_1" class="tooltiptext">
+                                                                <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
+                                                            </div>
+                                                        </div> 
+                                                    </label>
+                                                </div>
+
+                                                <div id="either_ii_2_2_1_dromedarius" class="govuk-checkboxes__item">
+                                                    <input class="govuk-checkboxes__input" id="II_2_2_1-1f" name="II_2_2_1-1" type="checkbox" value="dromedarius">
+                                                    <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-1f">
+                                                        Camelus dromedarius either
+                                                        <div class="tooltip">
+                                                             <a href="" class="tooltip tooltip-link">(note 1)</a>
                                                             <div id="tooltip_1" class="tooltiptext">
                                                                 <span></span><b>Note 1</b><br>Delete if not applicable.<br><br></span>
                                                             </div>
                                                         </div>
-                                                      
                                                     </label>
                                                 </div>
 
@@ -466,7 +562,7 @@
 
                                         <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
 
-                                        <div class="govuk-checkboxes__item">
+                                        <div id="either_ii_2_2_1_remainzone" class="govuk-checkboxes__item">
                                             <input class="govuk-checkboxes__input" id="II_2_2_1-2a" name="II_2_2_1-2" type="checkbox">
                                             <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-2a">
                                                 
@@ -486,7 +582,7 @@
                                         <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
 
                                         <!-- Checkbox -->
-                                        <div class="govuk-checkboxes__item">
+                                        <div id="either_ii_2_2_1_introzone" class="govuk-checkboxes__item">
                                             <input class="govuk-checkboxes__input" id="II_2_2_1-2b" name="II_2_2_1-2" type="checkbox">
                                             <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-2b">
                                                 
@@ -510,7 +606,7 @@
                                                 <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
 
                                                 <!-- Checkbox -->
-                                                <div class="govuk-checkboxes__item">
+                                                <div id="either_ii_2_2_1_thirdcountry" class="govuk-checkboxes__item">
                                                     <input class="govuk-checkboxes__input" id="II_2_2_1-3a" name="II_2_2_1-3" type="checkbox">
                                                     <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-3a">
                                                         
@@ -532,7 +628,7 @@
                                                 <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
 
                                                 <!-- Checkbox -->
-                                                <div class="govuk-checkboxes__item">
+                                                <div id="either_ii_2_2_1_memberstate"  class="govuk-checkboxes__item">
                                                     <input class="govuk-checkboxes__input" id="II_2_2_1-3b" name="II_2_2_1-3" type="checkbox">
                                                     <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-3b">
                                                         
@@ -566,9 +662,9 @@
                                         <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
 
                                         <!-- Checkbox -->
-                                        <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="II_2_2_1-3b" name="II_2_2_1-3" type="checkbox">
-                                            <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-3b">
+                                        <div id="either_ii_2_2_1_zones" class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="II_2_2_1-3c" name="II_2_2_1-3" type="checkbox">
+                                            <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-3c">
                                                         
                                                 the zone/s 
                                                             
@@ -607,9 +703,9 @@
                                         <!-- SPACING --><div class="govuk-!-padding-bottom-4"></div>
 
                                         <!-- Checkbox -->
-                                        <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="II_2_2_1-3b" name="II_2_2_1-3" type="checkbox">
-                                            <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-3b">
+                                        <div id="either_ii_2_2_1_memberstate" class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="II_2_2_1-3d" name="II_2_2_1-3" type="checkbox">
+                                            <label class="govuk-label govuk-checkboxes__label" for="II_2_2_1-3d">
                                                         
                                                 a Member State; 
                                                             

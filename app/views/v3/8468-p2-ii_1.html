@@ -34,7 +34,7 @@
 
     // new version with event listener included by Alex
     document.addEventListener("DOMContentLoaded", function () {
-        var checkbox = document.getElementById("II_1_");
+        var checkbox = document.getElementById("II_1");
         var targetDiv = document.getElementById("part_ii_1_notcrossed");
 
         checkbox.addEventListener("click", function () {
@@ -148,16 +148,19 @@
             <p><b>II.1</b></p>
             
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="II_1_" name="II_1_" type="checkbox" value="selected">
-              <label class="govuk-label govuk-checkboxes__label" for="II_1_">
+              <input class="govuk-checkboxes__input" id="II_1" name="II_1" type="checkbox" value="selected">
+              <label class="govuk-label govuk-checkboxes__label" for="II_1">
   
               <div id="ii_1_notcrossed">
 
-                  <!-- NOT CROSSED OUT -->
+                <!-- NOT CROSSED OUT -->
   
+                <div id="part_ii_1_notcrossed" class="notCrossed"><!----- II.1 CROSSED OUT CONTAINER -->
+                  
                   <b>Public health attestation</b><br> [Delete when the Union is not the final destination of the dairy products]
+                </div><!----- END II.1 CROSSED OUT CONTAINER -->
 
-                  <br><br>
+                <br>
                   I, the undersigned, declare that I am aware of the relevant requirements of Regulation (EC) No 178/2002 of the European Parliament and of the Council, Regulation (EC) No 852/2004</a> of the European Parliament and of the Council, Regulation (EC) No 853/2004 of the European Parliament and of the Council and Regulation (EU) 2017/625 of the European Parliament and of the Council and Commission Implementing Regulation (EU) 2019/627 and hereby certify that the dairy product described in Part I was produced in accordance with these requirements, and in particular that:
               </div><!-- end not crossed -->
 
@@ -200,7 +203,7 @@
 
           <!--------------- II.1.a ----------------->
 
-          <div id="part_ii_1_a_notcrossed" class="notCrossed"><!----- P2.1.a CROSSED OUT CONTAINER -->
+          
 
             <div class="govuk-checkboxes" data-module="govuk-checkboxes">
     
@@ -209,6 +212,9 @@
                 <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="II_1_a" name="II_1_a" type="checkbox" value="selected">
                     <label class="govuk-label govuk-checkboxes__label" for="II_1_a">
+
+                      <div id="part_ii_1_a_notcrossed" class="notCrossed"><!----- P2.1.a CROSSED OUT CONTAINER -->
+                        
                         <b>II.1.a Attestation as regards Commission Delegated Regulation (EU) 2023/905</b>
 
                         <div class="tooltip">
